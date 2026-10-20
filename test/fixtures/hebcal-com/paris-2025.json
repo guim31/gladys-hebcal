@@ -1,0 +1,2341 @@
+{
+  "source": "https://www.hebcal.com/hebcal, recorded on 2026-10-20",
+  "params": "latitude=48.8566&longitude=2.3522&tzid=Europe/Paris&b=18&M=on",
+  "location": {
+    "title": "48°51′N 2°21′E Europe/Paris",
+    "city": "48°51′N 2°21′E Europe/Paris",
+    "tzid": "Europe/Paris",
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "geo": "pos"
+  },
+  "items": [
+    {
+      "title": "Rosh Chodesh Tevet",
+      "date": "2025-01-01",
+      "category": "roshchodesh",
+      "memo": "Start of month of Tevet on the Hebrew calendar. Tevet (טֵבֵת) is the 4th month of the civil Hebrew year and the 10th month of the biblical Hebrew year. It has 29 days and corresponds to December or January on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Tevet 5785"
+    },
+    {
+      "title": "Chanukah: 8 Candles",
+      "date": "2025-01-01T17:36:00+01:00",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)"
+    },
+    {
+      "title": "Chanukah: 8th Day",
+      "date": "2025-01-02",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)",
+      "hdate": "2 Tevet 5785"
+    },
+    {
+      "title": "Candle lighting: 4:48pm",
+      "date": "2025-01-03T16:48:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayigash"
+    },
+    {
+      "title": "Parashat Vayigash",
+      "date": "2025-01-04",
+      "category": "parashat",
+      "hdate": "4 Tevet 5785"
+    },
+    {
+      "title": "Havdalah: 6:02pm",
+      "date": "2025-01-04T18:02:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Fast begins",
+      "date": "2025-01-10T07:00:00+01:00",
+      "category": "zmanim",
+      "memo": "Asara B’Tevet"
+    },
+    {
+      "title": "Asara B’Tevet",
+      "date": "2025-01-10",
+      "category": "holiday",
+      "title_orig": "Asara B'Tevet",
+      "memo": "Fast commemorating the siege of Jerusalem",
+      "hdate": "10 Tevet 5785"
+    },
+    {
+      "title": "Candle lighting: 4:57pm",
+      "date": "2025-01-10T16:57:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayechi"
+    },
+    {
+      "title": "Parashat Vayechi",
+      "date": "2025-01-11",
+      "category": "parashat",
+      "hdate": "11 Tevet 5785"
+    },
+    {
+      "title": "Havdalah: 6:09pm",
+      "date": "2025-01-11T18:09:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-01-14T06:58:00+01:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Candle lighting: 5:06pm",
+      "date": "2025-01-17T17:06:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Shemot"
+    },
+    {
+      "title": "Parashat Shemot",
+      "date": "2025-01-18",
+      "category": "parashat",
+      "hdate": "18 Tevet 5785"
+    },
+    {
+      "title": "Havdalah: 6:18pm",
+      "date": "2025-01-18T18:18:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 5:17pm",
+      "date": "2025-01-24T17:17:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vaera"
+    },
+    {
+      "title": "Parashat Vaera",
+      "date": "2025-01-25",
+      "category": "parashat",
+      "hdate": "25 Tevet 5785"
+    },
+    {
+      "title": "Mevarchim Chodesh Sh’vat",
+      "date": "2025-01-25",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Sh'vat",
+      "memo": "Molad Sh’vat: Wednesday, 6:17am and 17 chalakim",
+      "hdate": "25 Tevet 5785"
+    },
+    {
+      "title": "Havdalah: 6:28pm",
+      "date": "2025-01-25T18:28:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Rosh Chodesh Sh’vat",
+      "date": "2025-01-30",
+      "category": "roshchodesh",
+      "title_orig": "Rosh Chodesh Sh'vat",
+      "memo": "Start of month of Sh’vat on the Hebrew calendar. שְׁבָט (transliterated Sh’vat or Shevat) is the 5th month of the civil Hebrew year and the 11th month of the biblical Hebrew year. It has 30 days and corresponds to January or February on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Sh'vat 5785"
+    },
+    {
+      "title": "Candle lighting: 5:28pm",
+      "date": "2025-01-31T17:28:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Bo"
+    },
+    {
+      "title": "Parashat Bo",
+      "date": "2025-02-01",
+      "category": "parashat",
+      "hdate": "3 Sh'vat 5785"
+    },
+    {
+      "title": "Havdalah: 6:38pm",
+      "date": "2025-02-01T18:38:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 5:40pm",
+      "date": "2025-02-07T17:40:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Beshalach"
+    },
+    {
+      "title": "Parashat Beshalach",
+      "date": "2025-02-08",
+      "category": "parashat",
+      "hdate": "10 Sh'vat 5785"
+    },
+    {
+      "title": "Shabbat Shirah",
+      "date": "2025-02-08",
+      "category": "holiday",
+      "memo": "Shabbat of Song. Shabbat that includes Parashat Beshalach",
+      "hdate": "10 Sh'vat 5785"
+    },
+    {
+      "title": "Havdalah: 6:49pm",
+      "date": "2025-02-08T18:49:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-02-12T23:19:00+01:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Tu BiShvat",
+      "date": "2025-02-13",
+      "category": "holiday",
+      "memo": "New Year for Trees. Tu BiShvat is one of four “New Years” mentioned in the Mishnah",
+      "hdate": "15 Sh'vat 5785"
+    },
+    {
+      "title": "Candle lighting: 5:51pm",
+      "date": "2025-02-14T17:51:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Yitro"
+    },
+    {
+      "title": "Parashat Yitro",
+      "date": "2025-02-15",
+      "category": "parashat",
+      "hdate": "17 Sh'vat 5785"
+    },
+    {
+      "title": "Havdalah: 7:00pm",
+      "date": "2025-02-15T19:00:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 6:03pm",
+      "date": "2025-02-21T18:03:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Mishpatim"
+    },
+    {
+      "title": "Parashat Mishpatim",
+      "date": "2025-02-22",
+      "category": "parashat",
+      "hdate": "24 Sh'vat 5785"
+    },
+    {
+      "title": "Mevarchim Chodesh Adar",
+      "date": "2025-02-22",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Adar",
+      "memo": "Molad Adar: Thursday, 7:02pm",
+      "hdate": "24 Sh'vat 5785"
+    },
+    {
+      "title": "Havdalah: 7:10pm",
+      "date": "2025-02-22T19:10:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Rosh Chodesh Adar",
+      "date": "2025-02-28",
+      "category": "roshchodesh",
+      "memo": "Start of month of Adar on the Hebrew calendar. Adar (אֲדָר) is the 6th month of the civil Hebrew year and the 12th month of the biblical Hebrew year. It has 29 days and corresponds to February or March on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "30 Sh'vat 5785"
+    },
+    {
+      "title": "Candle lighting: 6:14pm",
+      "date": "2025-02-28T18:14:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Terumah"
+    },
+    {
+      "title": "Parashat Terumah",
+      "date": "2025-03-01",
+      "category": "parashat",
+      "hdate": "1 Adar 5785"
+    },
+    {
+      "title": "Shabbat Shekalim",
+      "date": "2025-03-01",
+      "category": "holiday",
+      "memo": "Shabbat before Rosh Chodesh Adar. Read in preparation for Purim",
+      "hdate": "1 Adar 5785"
+    },
+    {
+      "title": "Rosh Chodesh Adar",
+      "date": "2025-03-01",
+      "category": "roshchodesh",
+      "memo": "Start of month of Adar on the Hebrew calendar. Adar (אֲדָר) is the 6th month of the civil Hebrew year and the 12th month of the biblical Hebrew year. It has 29 days and corresponds to February or March on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Adar 5785"
+    },
+    {
+      "title": "Havdalah: 7:21pm",
+      "date": "2025-03-01T19:21:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 6:25pm",
+      "date": "2025-03-07T18:25:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Tetzaveh"
+    },
+    {
+      "title": "Parashat Tetzaveh",
+      "date": "2025-03-08",
+      "category": "parashat",
+      "hdate": "8 Adar 5785"
+    },
+    {
+      "title": "Shabbat Zachor",
+      "date": "2025-03-08",
+      "category": "holiday",
+      "memo": "Shabbat of Remembrance. Shabbat before Purim",
+      "hdate": "8 Adar 5785"
+    },
+    {
+      "title": "Havdalah: 7:32pm",
+      "date": "2025-03-08T19:32:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Fast begins",
+      "date": "2025-03-13T05:34:00+01:00",
+      "category": "zmanim",
+      "memo": "Ta’anit Esther"
+    },
+    {
+      "title": "Ta’anit Esther",
+      "date": "2025-03-13",
+      "category": "holiday",
+      "title_orig": "Ta'anit Esther",
+      "memo": "Fast of Esther",
+      "hdate": "13 Adar 5785"
+    },
+    {
+      "title": "Erev Purim",
+      "date": "2025-03-13",
+      "category": "holiday",
+      "memo": "Celebration of Jewish deliverance as told by Megilat Esther. It commemorates a time when the Jewish people living in Persia were saved from extermination",
+      "hdate": "13 Adar 5785"
+    },
+    {
+      "title": "Fast ends",
+      "date": "2025-03-13T19:31:00+01:00",
+      "category": "zmanim",
+      "memo": "Ta’anit Esther"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-03-14T05:32:00+01:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Purim",
+      "date": "2025-03-14",
+      "category": "holiday",
+      "memo": "Celebration of Jewish deliverance as told by Megilat Esther. It commemorates a time when the Jewish people living in Persia were saved from extermination",
+      "hdate": "14 Adar 5785"
+    },
+    {
+      "title": "Candle lighting: 6:36pm",
+      "date": "2025-03-14T18:36:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Ki Tisa"
+    },
+    {
+      "title": "Parashat Ki Tisa",
+      "date": "2025-03-15",
+      "category": "parashat",
+      "hdate": "15 Adar 5785"
+    },
+    {
+      "title": "Shushan Purim",
+      "date": "2025-03-15",
+      "category": "holiday",
+      "memo": "Purim celebrated in Jerusalem and walled cities",
+      "hdate": "15 Adar 5785"
+    },
+    {
+      "title": "Havdalah: 7:43pm",
+      "date": "2025-03-15T19:43:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Purim Meshulash",
+      "date": "2025-03-16",
+      "category": "holiday",
+      "memo": "Triple Purim, spanning 3 days in Jerusalem and walled cities. It occurs when the 15th of Adar coincides with Shabbat",
+      "hdate": "16 Adar 5785"
+    },
+    {
+      "title": "Candle lighting: 6:47pm",
+      "date": "2025-03-21T18:47:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayakhel"
+    },
+    {
+      "title": "Parashat Vayakhel",
+      "date": "2025-03-22",
+      "category": "parashat",
+      "hdate": "22 Adar 5785"
+    },
+    {
+      "title": "Shabbat Parah",
+      "date": "2025-03-22",
+      "category": "holiday",
+      "memo": "Shabbat of the Red Heifer. Shabbat before Shabbat HaChodesh, in preparation for Passover",
+      "hdate": "22 Adar 5785"
+    },
+    {
+      "title": "Havdalah: 7:54pm",
+      "date": "2025-03-22T19:54:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 6:57pm",
+      "date": "2025-03-28T18:57:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Pekudei"
+    },
+    {
+      "title": "Parashat Pekudei",
+      "date": "2025-03-29",
+      "category": "parashat",
+      "hdate": "29 Adar 5785"
+    },
+    {
+      "title": "Shabbat HaChodesh",
+      "date": "2025-03-29",
+      "category": "holiday",
+      "memo": "Shabbat before Rosh Chodesh Nissan. Read in preparation for Passover",
+      "hdate": "29 Adar 5785"
+    },
+    {
+      "title": "Mevarchim Chodesh Nisan",
+      "date": "2025-03-29",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Nisan",
+      "memo": "Molad Nisan: Saturday, 7:46am and 1 chalakim",
+      "hdate": "29 Adar 5785"
+    },
+    {
+      "title": "Havdalah: 8:05pm",
+      "date": "2025-03-29T20:05:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Rosh Chodesh Nisan",
+      "date": "2025-03-30",
+      "category": "roshchodesh",
+      "memo": "Start of month of Nisan on the Hebrew calendar. נִיסָן (transliterated Nisan or Nissan) is the 7th month of the civil Hebrew year (8th on leap years) and the 1st month of the biblical Hebrew year. It has 30 days and corresponds to March or April on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Nisan 5785"
+    },
+    {
+      "title": "Candle lighting: 8:08pm",
+      "date": "2025-04-04T20:08:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayikra"
+    },
+    {
+      "title": "Parashat Vayikra",
+      "date": "2025-04-05",
+      "category": "parashat",
+      "hdate": "7 Nisan 5785"
+    },
+    {
+      "title": "Havdalah: 9:16pm",
+      "date": "2025-04-05T21:16:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Yom HaAliyah",
+      "date": "2025-04-08",
+      "category": "holiday",
+      "memo": "Recognizes Aliyah, immigration to the Jewish State of Israel",
+      "hdate": "10 Nisan 5785"
+    },
+    {
+      "title": "Fast begins",
+      "date": "2025-04-10T05:28:00+02:00",
+      "category": "zmanim",
+      "memo": "Ta’anit Bechorot"
+    },
+    {
+      "title": "Ta’anit Bechorot",
+      "date": "2025-04-10",
+      "category": "holiday",
+      "title_orig": "Ta'anit Bechorot",
+      "memo": "Fast of the First Born",
+      "hdate": "12 Nisan 5785"
+    },
+    {
+      "title": "Fast ends",
+      "date": "2025-04-10T21:15:00+02:00",
+      "category": "zmanim",
+      "memo": "Ta’anit Bechorot"
+    },
+    {
+      "title": "Biur Chametz",
+      "date": "2025-04-11T12:45:00+02:00",
+      "category": "zmanim",
+      "memo": "Latest time of day to sell and burn chametz before Pesach"
+    },
+    {
+      "title": "Candle lighting: 8:18pm",
+      "date": "2025-04-11T20:18:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Tzav"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-04-11T20:18:00+02:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Parashat Tzav",
+      "date": "2025-04-12",
+      "category": "parashat",
+      "hdate": "14 Nisan 5785"
+    },
+    {
+      "title": "Shabbat HaGadol",
+      "date": "2025-04-12",
+      "category": "holiday",
+      "memo": "Shabbat before Pesach (The Great Shabbat)",
+      "hdate": "14 Nisan 5785"
+    },
+    {
+      "title": "Finish eating chametz",
+      "date": "2025-04-12T11:36:00+02:00",
+      "category": "zmanim",
+      "memo": "Latest time of day to eat chametz on the day before Pesach"
+    },
+    {
+      "title": "Erev Pesach",
+      "date": "2025-04-12",
+      "category": "holiday",
+      "memo": "Passover, the Feast of Unleavened Bread. Also called Chag HaMatzot (the Festival of Matzah), it commemorates the Exodus and freedom of the Israelites from ancient Egypt",
+      "hdate": "14 Nisan 5785"
+    },
+    {
+      "title": "Candle lighting: 9:28pm",
+      "date": "2025-04-12T21:28:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Erev Pesach"
+    },
+    {
+      "title": "Pesach I",
+      "date": "2025-04-13",
+      "category": "holiday",
+      "memo": "Passover, the Feast of Unleavened Bread. Also called Chag HaMatzot (the Festival of Matzah), it commemorates the Exodus and freedom of the Israelites from ancient Egypt",
+      "hdate": "15 Nisan 5785"
+    },
+    {
+      "title": "Candle lighting: 9:29pm",
+      "date": "2025-04-13T21:29:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Pesach I"
+    },
+    {
+      "title": "Pesach II",
+      "date": "2025-04-14",
+      "category": "holiday",
+      "memo": "Passover, the Feast of Unleavened Bread. Also called Chag HaMatzot (the Festival of Matzah), it commemorates the Exodus and freedom of the Israelites from ancient Egypt",
+      "hdate": "16 Nisan 5785"
+    },
+    {
+      "title": "1st day of the Omer",
+      "date": "2025-04-14",
+      "category": "omer",
+      "title_orig": "Omer 1",
+      "hdate": "16 Nisan 5785"
+    },
+    {
+      "title": "Havdalah: 9:31pm",
+      "date": "2025-04-14T21:31:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah",
+      "memo": "Pesach II"
+    },
+    {
+      "title": "Pesach III (CH’’M)",
+      "date": "2025-04-15",
+      "category": "holiday",
+      "title_orig": "Pesach III (CH''M)",
+      "memo": "Passover, the Feast of Unleavened Bread. Also called Chag HaMatzot (the Festival of Matzah), it commemorates the Exodus and freedom of the Israelites from ancient Egypt",
+      "hdate": "17 Nisan 5785"
+    },
+    {
+      "title": "2nd day of the Omer",
+      "date": "2025-04-15",
+      "category": "omer",
+      "title_orig": "Omer 2",
+      "hdate": "17 Nisan 5785"
+    },
+    {
+      "title": "Pesach IV (CH’’M)",
+      "date": "2025-04-16",
+      "category": "holiday",
+      "title_orig": "Pesach IV (CH''M)",
+      "memo": "Passover, the Feast of Unleavened Bread. Also called Chag HaMatzot (the Festival of Matzah), it commemorates the Exodus and freedom of the Israelites from ancient Egypt",
+      "hdate": "18 Nisan 5785"
+    },
+    {
+      "title": "3rd day of the Omer",
+      "date": "2025-04-16",
+      "category": "omer",
+      "title_orig": "Omer 3",
+      "hdate": "18 Nisan 5785"
+    },
+    {
+      "title": "Pesach V (CH’’M)",
+      "date": "2025-04-17",
+      "category": "holiday",
+      "title_orig": "Pesach V (CH''M)",
+      "memo": "Passover, the Feast of Unleavened Bread. Also called Chag HaMatzot (the Festival of Matzah), it commemorates the Exodus and freedom of the Israelites from ancient Egypt",
+      "hdate": "19 Nisan 5785"
+    },
+    {
+      "title": "4th day of the Omer",
+      "date": "2025-04-17",
+      "category": "omer",
+      "title_orig": "Omer 4",
+      "hdate": "19 Nisan 5785"
+    },
+    {
+      "title": "Pesach VI (CH’’M)",
+      "date": "2025-04-18",
+      "category": "holiday",
+      "title_orig": "Pesach VI (CH''M)",
+      "memo": "Passover, the Feast of Unleavened Bread. Also called Chag HaMatzot (the Festival of Matzah), it commemorates the Exodus and freedom of the Israelites from ancient Egypt",
+      "hdate": "20 Nisan 5785"
+    },
+    {
+      "title": "5th day of the Omer",
+      "date": "2025-04-18",
+      "category": "omer",
+      "title_orig": "Omer 5",
+      "hdate": "20 Nisan 5785"
+    },
+    {
+      "title": "Candle lighting: 8:29pm",
+      "date": "2025-04-18T20:29:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Pesach VI (CH’’M)"
+    },
+    {
+      "title": "Pesach VII",
+      "date": "2025-04-19",
+      "category": "holiday",
+      "memo": "Passover, the Feast of Unleavened Bread. Also called Chag HaMatzot (the Festival of Matzah), it commemorates the Exodus and freedom of the Israelites from ancient Egypt",
+      "hdate": "21 Nisan 5785"
+    },
+    {
+      "title": "6th day of the Omer",
+      "date": "2025-04-19",
+      "category": "omer",
+      "title_orig": "Omer 6",
+      "hdate": "21 Nisan 5785"
+    },
+    {
+      "title": "Candle lighting: 9:40pm",
+      "date": "2025-04-19T21:40:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Pesach VII"
+    },
+    {
+      "title": "Pesach VIII",
+      "date": "2025-04-20",
+      "category": "holiday",
+      "memo": "Passover, the Feast of Unleavened Bread. Also called Chag HaMatzot (the Festival of Matzah), it commemorates the Exodus and freedom of the Israelites from ancient Egypt",
+      "hdate": "22 Nisan 5785"
+    },
+    {
+      "title": "7th day of the Omer",
+      "date": "2025-04-20",
+      "category": "omer",
+      "title_orig": "Omer 7",
+      "hdate": "22 Nisan 5785"
+    },
+    {
+      "title": "Havdalah: 9:41pm",
+      "date": "2025-04-20T21:41:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah",
+      "memo": "Pesach VIII"
+    },
+    {
+      "title": "8th day of the Omer",
+      "date": "2025-04-21",
+      "category": "omer",
+      "title_orig": "Omer 8",
+      "hdate": "23 Nisan 5785"
+    },
+    {
+      "title": "9th day of the Omer",
+      "date": "2025-04-22",
+      "category": "omer",
+      "title_orig": "Omer 9",
+      "hdate": "24 Nisan 5785"
+    },
+    {
+      "title": "10th day of the Omer",
+      "date": "2025-04-23",
+      "category": "omer",
+      "title_orig": "Omer 10",
+      "hdate": "25 Nisan 5785"
+    },
+    {
+      "title": "Yom HaShoah",
+      "date": "2025-04-24",
+      "category": "holiday",
+      "memo": "Holocaust Memorial Day",
+      "hdate": "26 Nisan 5785"
+    },
+    {
+      "title": "11th day of the Omer",
+      "date": "2025-04-24",
+      "category": "omer",
+      "title_orig": "Omer 11",
+      "hdate": "26 Nisan 5785"
+    },
+    {
+      "title": "12th day of the Omer",
+      "date": "2025-04-25",
+      "category": "omer",
+      "title_orig": "Omer 12",
+      "hdate": "27 Nisan 5785"
+    },
+    {
+      "title": "Candle lighting: 8:39pm",
+      "date": "2025-04-25T20:39:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Shmini"
+    },
+    {
+      "title": "Parashat Shmini",
+      "date": "2025-04-26",
+      "category": "parashat",
+      "hdate": "28 Nisan 5785"
+    },
+    {
+      "title": "Mevarchim Chodesh Iyyar",
+      "date": "2025-04-26",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Iyyar",
+      "memo": "Molad Iyyar: Sunday, 8:30pm and 2 chalakim",
+      "hdate": "28 Nisan 5785"
+    },
+    {
+      "title": "13th day of the Omer",
+      "date": "2025-04-26",
+      "category": "omer",
+      "title_orig": "Omer 13",
+      "hdate": "28 Nisan 5785"
+    },
+    {
+      "title": "Havdalah: 9:52pm",
+      "date": "2025-04-26T21:52:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "14th day of the Omer",
+      "date": "2025-04-27",
+      "category": "omer",
+      "title_orig": "Omer 14",
+      "hdate": "29 Nisan 5785"
+    },
+    {
+      "title": "Rosh Chodesh Iyyar",
+      "date": "2025-04-28",
+      "category": "roshchodesh",
+      "memo": "Start of month of Iyyar on the Hebrew calendar. אִיָּיר (transliterated Iyyar or Iyar) is the 8th month of the civil Hebrew year (9th on leap years) and the 2nd month of the biblical Hebrew year. It has 29 days and corresponds to April or May on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "30 Nisan 5785"
+    },
+    {
+      "title": "15th day of the Omer",
+      "date": "2025-04-28",
+      "category": "omer",
+      "title_orig": "Omer 15",
+      "hdate": "30 Nisan 5785"
+    },
+    {
+      "title": "Rosh Chodesh Iyyar",
+      "date": "2025-04-29",
+      "category": "roshchodesh",
+      "memo": "Start of month of Iyyar on the Hebrew calendar. אִיָּיר (transliterated Iyyar or Iyar) is the 8th month of the civil Hebrew year (9th on leap years) and the 2nd month of the biblical Hebrew year. It has 29 days and corresponds to April or May on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Iyyar 5785"
+    },
+    {
+      "title": "16th day of the Omer",
+      "date": "2025-04-29",
+      "category": "omer",
+      "title_orig": "Omer 16",
+      "hdate": "1 Iyyar 5785"
+    },
+    {
+      "title": "Yom HaZikaron",
+      "date": "2025-04-30",
+      "category": "holiday",
+      "memo": "Israeli Memorial Day. Remembers those who died in the War of Independence and other wars in Israel. The full name of the holiday is Yom HaZikaron LeHalalei Ma’arakhot Yisrael ul’Nifge’ei Pe’ulot HaEivah (Hebrew: יוֹם הזִּכָּרוֹן לְחַלְלֵי מַעֲרָכוֹת יִשְׂרָאֵל וּלְנִפְגְעֵי פְּעֻלּוֹת הָאֵיבָה), Memorial Day for the Fallen Soldiers of the Wars of Israel and Victims of Actions of Terrorism. Although Yom Hazikaron is normally observed on the 4th of Iyyar, it may be moved earlier or postponed if observance of the holiday (or Yom HaAtzma’ut, which always follows it) would conflict with Shabbat",
+      "hdate": "2 Iyyar 5785"
+    },
+    {
+      "title": "17th day of the Omer",
+      "date": "2025-04-30",
+      "category": "omer",
+      "title_orig": "Omer 17",
+      "hdate": "2 Iyyar 5785"
+    },
+    {
+      "title": "Yom HaAtzma’ut",
+      "date": "2025-05-01",
+      "category": "holiday",
+      "title_orig": "Yom HaAtzma'ut",
+      "memo": "Israeli Independence Day. Commemorates the declaration of independence of Israel in 1948. Although Yom HaAtzma’ut is normally observed on the 5th of Iyyar, it may be moved earlier or postponed if observance of the holiday (or Yom HaZikaron, which always precedes it) would conflict with Shabbat",
+      "hdate": "3 Iyyar 5785"
+    },
+    {
+      "title": "18th day of the Omer",
+      "date": "2025-05-01",
+      "category": "omer",
+      "title_orig": "Omer 18",
+      "hdate": "3 Iyyar 5785"
+    },
+    {
+      "title": "19th day of the Omer",
+      "date": "2025-05-02",
+      "category": "omer",
+      "title_orig": "Omer 19",
+      "hdate": "4 Iyyar 5785"
+    },
+    {
+      "title": "Candle lighting: 8:49pm",
+      "date": "2025-05-02T20:49:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Tazria-Metzora"
+    },
+    {
+      "title": "Parashat Tazria-Metzora",
+      "date": "2025-05-03",
+      "category": "parashat",
+      "hdate": "5 Iyyar 5785"
+    },
+    {
+      "title": "20th day of the Omer",
+      "date": "2025-05-03",
+      "category": "omer",
+      "title_orig": "Omer 20",
+      "hdate": "5 Iyyar 5785"
+    },
+    {
+      "title": "Havdalah: 10:04pm",
+      "date": "2025-05-03T22:04:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "21st day of the Omer",
+      "date": "2025-05-04",
+      "category": "omer",
+      "title_orig": "Omer 21",
+      "hdate": "6 Iyyar 5785"
+    },
+    {
+      "title": "22nd day of the Omer",
+      "date": "2025-05-05",
+      "category": "omer",
+      "title_orig": "Omer 22",
+      "hdate": "7 Iyyar 5785"
+    },
+    {
+      "title": "23rd day of the Omer",
+      "date": "2025-05-06",
+      "category": "omer",
+      "title_orig": "Omer 23",
+      "hdate": "8 Iyyar 5785"
+    },
+    {
+      "title": "24th day of the Omer",
+      "date": "2025-05-07",
+      "category": "omer",
+      "title_orig": "Omer 24",
+      "hdate": "9 Iyyar 5785"
+    },
+    {
+      "title": "25th day of the Omer",
+      "date": "2025-05-08",
+      "category": "omer",
+      "title_orig": "Omer 25",
+      "hdate": "10 Iyyar 5785"
+    },
+    {
+      "title": "26th day of the Omer",
+      "date": "2025-05-09",
+      "category": "omer",
+      "title_orig": "Omer 26",
+      "hdate": "11 Iyyar 5785"
+    },
+    {
+      "title": "Candle lighting: 8:59pm",
+      "date": "2025-05-09T20:59:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Achrei Mot-Kedoshim"
+    },
+    {
+      "title": "Parashat Achrei Mot-Kedoshim",
+      "date": "2025-05-10",
+      "category": "parashat",
+      "hdate": "12 Iyyar 5785"
+    },
+    {
+      "title": "27th day of the Omer",
+      "date": "2025-05-10",
+      "category": "omer",
+      "title_orig": "Omer 27",
+      "hdate": "12 Iyyar 5785"
+    },
+    {
+      "title": "Havdalah: 10:16pm",
+      "date": "2025-05-10T22:16:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "28th day of the Omer",
+      "date": "2025-05-11",
+      "category": "omer",
+      "title_orig": "Omer 28",
+      "hdate": "13 Iyyar 5785"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-05-12T04:06:00+02:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Pesach Sheni",
+      "date": "2025-05-12",
+      "category": "holiday",
+      "memo": "Second Passover, one month after Passover",
+      "hdate": "14 Iyyar 5785"
+    },
+    {
+      "title": "29th day of the Omer",
+      "date": "2025-05-12",
+      "category": "omer",
+      "title_orig": "Omer 29",
+      "hdate": "14 Iyyar 5785"
+    },
+    {
+      "title": "30th day of the Omer",
+      "date": "2025-05-13",
+      "category": "omer",
+      "title_orig": "Omer 30",
+      "hdate": "15 Iyyar 5785"
+    },
+    {
+      "title": "31st day of the Omer",
+      "date": "2025-05-14",
+      "category": "omer",
+      "title_orig": "Omer 31",
+      "hdate": "16 Iyyar 5785"
+    },
+    {
+      "title": "32nd day of the Omer",
+      "date": "2025-05-15",
+      "category": "omer",
+      "title_orig": "Omer 32",
+      "hdate": "17 Iyyar 5785"
+    },
+    {
+      "title": "Lag BaOmer",
+      "date": "2025-05-16",
+      "category": "holiday",
+      "memo": "33rd day of counting the Omer. The holiday is a temporary break from the semi-mourning period the counting of the Omer. Practices include lighting bonfires, getting haircuts, and Jewish weddings",
+      "hdate": "18 Iyyar 5785"
+    },
+    {
+      "title": "33rd day of the Omer",
+      "date": "2025-05-16",
+      "category": "omer",
+      "title_orig": "Omer 33",
+      "hdate": "18 Iyyar 5785"
+    },
+    {
+      "title": "Candle lighting: 9:09pm",
+      "date": "2025-05-16T21:09:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Emor"
+    },
+    {
+      "title": "Parashat Emor",
+      "date": "2025-05-17",
+      "category": "parashat",
+      "hdate": "19 Iyyar 5785"
+    },
+    {
+      "title": "34th day of the Omer",
+      "date": "2025-05-17",
+      "category": "omer",
+      "title_orig": "Omer 34",
+      "hdate": "19 Iyyar 5785"
+    },
+    {
+      "title": "Havdalah: 10:27pm",
+      "date": "2025-05-17T22:27:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "35th day of the Omer",
+      "date": "2025-05-18",
+      "category": "omer",
+      "title_orig": "Omer 35",
+      "hdate": "20 Iyyar 5785"
+    },
+    {
+      "title": "36th day of the Omer",
+      "date": "2025-05-19",
+      "category": "omer",
+      "title_orig": "Omer 36",
+      "hdate": "21 Iyyar 5785"
+    },
+    {
+      "title": "37th day of the Omer",
+      "date": "2025-05-20",
+      "category": "omer",
+      "title_orig": "Omer 37",
+      "hdate": "22 Iyyar 5785"
+    },
+    {
+      "title": "38th day of the Omer",
+      "date": "2025-05-21",
+      "category": "omer",
+      "title_orig": "Omer 38",
+      "hdate": "23 Iyyar 5785"
+    },
+    {
+      "title": "39th day of the Omer",
+      "date": "2025-05-22",
+      "category": "omer",
+      "title_orig": "Omer 39",
+      "hdate": "24 Iyyar 5785"
+    },
+    {
+      "title": "40th day of the Omer",
+      "date": "2025-05-23",
+      "category": "omer",
+      "title_orig": "Omer 40",
+      "hdate": "25 Iyyar 5785"
+    },
+    {
+      "title": "Candle lighting: 9:18pm",
+      "date": "2025-05-23T21:18:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Behar-Bechukotai"
+    },
+    {
+      "title": "Parashat Behar-Bechukotai",
+      "date": "2025-05-24",
+      "category": "parashat",
+      "hdate": "26 Iyyar 5785"
+    },
+    {
+      "title": "Mevarchim Chodesh Sivan",
+      "date": "2025-05-24",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Sivan",
+      "memo": "Molad Sivan: Tuesday, 9:14am and 3 chalakim",
+      "hdate": "26 Iyyar 5785"
+    },
+    {
+      "title": "41st day of the Omer",
+      "date": "2025-05-24",
+      "category": "omer",
+      "title_orig": "Omer 41",
+      "hdate": "26 Iyyar 5785"
+    },
+    {
+      "title": "Havdalah: 10:38pm",
+      "date": "2025-05-24T22:38:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "42nd day of the Omer",
+      "date": "2025-05-25",
+      "category": "omer",
+      "title_orig": "Omer 42",
+      "hdate": "27 Iyyar 5785"
+    },
+    {
+      "title": "Yom Yerushalayim",
+      "date": "2025-05-26",
+      "category": "holiday",
+      "memo": "Jerusalem Day. Commemorates the re-unification of Jerusalem in 1967",
+      "hdate": "28 Iyyar 5785"
+    },
+    {
+      "title": "43rd day of the Omer",
+      "date": "2025-05-26",
+      "category": "omer",
+      "title_orig": "Omer 43",
+      "hdate": "28 Iyyar 5785"
+    },
+    {
+      "title": "44th day of the Omer",
+      "date": "2025-05-27",
+      "category": "omer",
+      "title_orig": "Omer 44",
+      "hdate": "29 Iyyar 5785"
+    },
+    {
+      "title": "Rosh Chodesh Sivan",
+      "date": "2025-05-28",
+      "category": "roshchodesh",
+      "memo": "Start of month of Sivan on the Hebrew calendar. Sivan (סִיוָן) is the 9th month of the civil Hebrew year (10th on leap years) and the 3rd month of the biblical Hebrew year. It has 30 days and corresponds to May or June on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Sivan 5785"
+    },
+    {
+      "title": "45th day of the Omer",
+      "date": "2025-05-28",
+      "category": "omer",
+      "title_orig": "Omer 45",
+      "hdate": "1 Sivan 5785"
+    },
+    {
+      "title": "46th day of the Omer",
+      "date": "2025-05-29",
+      "category": "omer",
+      "title_orig": "Omer 46",
+      "hdate": "2 Sivan 5785"
+    },
+    {
+      "title": "47th day of the Omer",
+      "date": "2025-05-30",
+      "category": "omer",
+      "title_orig": "Omer 47",
+      "hdate": "3 Sivan 5785"
+    },
+    {
+      "title": "Candle lighting: 9:25pm",
+      "date": "2025-05-30T21:25:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Bamidbar"
+    },
+    {
+      "title": "Parashat Bamidbar",
+      "date": "2025-05-31",
+      "category": "parashat",
+      "hdate": "4 Sivan 5785"
+    },
+    {
+      "title": "48th day of the Omer",
+      "date": "2025-05-31",
+      "category": "omer",
+      "title_orig": "Omer 48",
+      "hdate": "4 Sivan 5785"
+    },
+    {
+      "title": "Havdalah: 10:48pm",
+      "date": "2025-05-31T22:48:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "49th day of the Omer",
+      "date": "2025-06-01",
+      "category": "omer",
+      "title_orig": "Omer 49",
+      "hdate": "5 Sivan 5785"
+    },
+    {
+      "title": "Erev Shavuot",
+      "date": "2025-06-01",
+      "category": "holiday",
+      "memo": "Festival of Weeks. Commemorates the giving of the Torah at Mount Sinai",
+      "hdate": "5 Sivan 5785"
+    },
+    {
+      "title": "Candle lighting: 9:27pm",
+      "date": "2025-06-01T21:27:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Erev Shavuot"
+    },
+    {
+      "title": "Shavuot I",
+      "date": "2025-06-02",
+      "category": "holiday",
+      "memo": "Festival of Weeks. Commemorates the giving of the Torah at Mount Sinai",
+      "hdate": "6 Sivan 5785"
+    },
+    {
+      "title": "Candle lighting: 10:50pm",
+      "date": "2025-06-02T22:50:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Shavuot I"
+    },
+    {
+      "title": "Shavuot II",
+      "date": "2025-06-03",
+      "category": "holiday",
+      "memo": "Festival of Weeks. Commemorates the giving of the Torah at Mount Sinai",
+      "hdate": "7 Sivan 5785"
+    },
+    {
+      "title": "Havdalah: 10:52pm",
+      "date": "2025-06-03T22:52:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah",
+      "memo": "Shavuot II"
+    },
+    {
+      "title": "Candle lighting: 9:32pm",
+      "date": "2025-06-06T21:32:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Nasso"
+    },
+    {
+      "title": "Parashat Nasso",
+      "date": "2025-06-07",
+      "category": "parashat",
+      "hdate": "11 Sivan 5785"
+    },
+    {
+      "title": "Havdalah: 10:56pm",
+      "date": "2025-06-07T22:56:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-06-11T03:05:00+02:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Candle lighting: 9:37pm",
+      "date": "2025-06-13T21:37:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Beha’alotcha"
+    },
+    {
+      "title": "Parashat Beha’alotcha",
+      "date": "2025-06-14",
+      "category": "parashat",
+      "title_orig": "Parashat Beha'alotcha",
+      "hdate": "18 Sivan 5785"
+    },
+    {
+      "title": "Havdalah: 11:01pm",
+      "date": "2025-06-14T23:01:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 9:39pm",
+      "date": "2025-06-20T21:39:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Sh’lach"
+    },
+    {
+      "title": "Parashat Sh’lach",
+      "date": "2025-06-21",
+      "category": "parashat",
+      "title_orig": "Parashat Sh'lach",
+      "hdate": "25 Sivan 5785"
+    },
+    {
+      "title": "Mevarchim Chodesh Tamuz",
+      "date": "2025-06-21",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Tamuz",
+      "memo": "Molad Tamuz: Wednesday, 9:58pm and 4 chalakim",
+      "hdate": "25 Sivan 5785"
+    },
+    {
+      "title": "Havdalah: 11:04pm",
+      "date": "2025-06-21T23:04:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Rosh Chodesh Tamuz",
+      "date": "2025-06-26",
+      "category": "roshchodesh",
+      "memo": "Start of month of Tammuz on the Hebrew calendar. תַּמּוּז (transliterated Tamuz or Tammuz) is the 10th month of the civil Hebrew year (11th on leap years) and the 4th month of the biblical Hebrew year. It has 29 days and corresponds to June or July on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "30 Sivan 5785"
+    },
+    {
+      "title": "Rosh Chodesh Tamuz",
+      "date": "2025-06-27",
+      "category": "roshchodesh",
+      "memo": "Start of month of Tammuz on the Hebrew calendar. תַּמּוּז (transliterated Tamuz or Tammuz) is the 10th month of the civil Hebrew year (11th on leap years) and the 4th month of the biblical Hebrew year. It has 29 days and corresponds to June or July on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Tamuz 5785"
+    },
+    {
+      "title": "Candle lighting: 9:40pm",
+      "date": "2025-06-27T21:40:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Korach"
+    },
+    {
+      "title": "Parashat Korach",
+      "date": "2025-06-28",
+      "category": "parashat",
+      "hdate": "2 Tamuz 5785"
+    },
+    {
+      "title": "Havdalah: 11:04pm",
+      "date": "2025-06-28T23:04:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 9:38pm",
+      "date": "2025-07-04T21:38:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Chukat"
+    },
+    {
+      "title": "Parashat Chukat",
+      "date": "2025-07-05",
+      "category": "parashat",
+      "hdate": "9 Tamuz 5785"
+    },
+    {
+      "title": "Havdalah: 11:00pm",
+      "date": "2025-07-05T23:00:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-07-10T03:26:00+02:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Candle lighting: 9:34pm",
+      "date": "2025-07-11T21:34:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Balak"
+    },
+    {
+      "title": "Parashat Balak",
+      "date": "2025-07-12",
+      "category": "parashat",
+      "hdate": "16 Tamuz 5785"
+    },
+    {
+      "title": "Havdalah: 10:54pm",
+      "date": "2025-07-12T22:54:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Fast begins",
+      "date": "2025-07-13T03:33:00+02:00",
+      "category": "zmanim",
+      "memo": "Tzom Tammuz"
+    },
+    {
+      "title": "Tzom Tammuz",
+      "date": "2025-07-13",
+      "category": "holiday",
+      "memo": "Fast commemorating breaching of the walls of Jerusalem before the destruction of the Second Temple",
+      "hdate": "17 Tamuz 5785"
+    },
+    {
+      "title": "Fast ends",
+      "date": "2025-07-13T22:41:00+02:00",
+      "category": "zmanim",
+      "memo": "Tzom Tammuz"
+    },
+    {
+      "title": "Candle lighting: 9:28pm",
+      "date": "2025-07-18T21:28:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Pinchas"
+    },
+    {
+      "title": "Parashat Pinchas",
+      "date": "2025-07-19",
+      "category": "parashat",
+      "hdate": "23 Tamuz 5785"
+    },
+    {
+      "title": "Mevarchim Chodesh Av",
+      "date": "2025-07-19",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Av",
+      "memo": "Molad Av: Friday, 10:42am and 5 chalakim",
+      "hdate": "23 Tamuz 5785"
+    },
+    {
+      "title": "Havdalah: 10:46pm",
+      "date": "2025-07-19T22:46:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 9:20pm",
+      "date": "2025-07-25T21:20:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Matot-Masei"
+    },
+    {
+      "title": "Parashat Matot-Masei",
+      "date": "2025-07-26",
+      "category": "parashat",
+      "hdate": "1 Av 5785"
+    },
+    {
+      "title": "Rosh Chodesh Av",
+      "date": "2025-07-26",
+      "category": "roshchodesh",
+      "memo": "Start of month of Av on the Hebrew calendar. Av (אָב) is the 11th month of the civil Hebrew year (12th on leap years) and the 5th month of the biblical Hebrew year. It has 30 days and corresponds to July or August on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Av 5785"
+    },
+    {
+      "title": "Havdalah: 10:35pm",
+      "date": "2025-07-26T22:35:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 9:10pm",
+      "date": "2025-08-01T21:10:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Devarim"
+    },
+    {
+      "title": "Parashat Devarim",
+      "date": "2025-08-02",
+      "category": "parashat",
+      "hdate": "8 Av 5785"
+    },
+    {
+      "title": "Shabbat Chazon",
+      "date": "2025-08-02",
+      "category": "holiday",
+      "memo": "Shabbat of Prophecy/Shabbat of Vision. Shabbat before Tish’a B’Av",
+      "hdate": "8 Av 5785"
+    },
+    {
+      "title": "Erev Tish’a B’Av",
+      "date": "2025-08-02",
+      "category": "holiday",
+      "title_orig": "Erev Tish'a B'Av",
+      "memo": "The Ninth of Av. Fast commemorating the destruction of the two Temples",
+      "hdate": "8 Av 5785"
+    },
+    {
+      "title": "Fast begins",
+      "date": "2025-08-02T21:27:00+02:00",
+      "category": "zmanim",
+      "memo": "Erev Tish’a B’Av"
+    },
+    {
+      "title": "Havdalah: 10:23pm",
+      "date": "2025-08-02T22:23:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Tish’a B’Av",
+      "date": "2025-08-03",
+      "category": "holiday",
+      "title_orig": "Tish'a B'Av",
+      "memo": "The Ninth of Av. Fast commemorating the destruction of the two Temples",
+      "hdate": "9 Av 5785"
+    },
+    {
+      "title": "Fast ends",
+      "date": "2025-08-03T22:06:00+02:00",
+      "category": "zmanim",
+      "memo": "Tish’a B’Av"
+    },
+    {
+      "title": "Candle lighting: 8:59pm",
+      "date": "2025-08-08T20:59:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vaetchanan"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-08-08T20:59:00+02:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Parashat Vaetchanan",
+      "date": "2025-08-09",
+      "category": "parashat",
+      "hdate": "15 Av 5785"
+    },
+    {
+      "title": "Shabbat Nachamu",
+      "date": "2025-08-09",
+      "category": "holiday",
+      "memo": "Shabbat after Tish’a B’Av (Shabbat of Consolation). The first of seven Shabbatot leading up to Rosh Hashanah. Named after the Haftarah (from Isaiah 40) which begins with the verse נַחֲמוּ נַחֲמוּ, עַמִּי (“Comfort, oh comfort my people”)",
+      "hdate": "15 Av 5785"
+    },
+    {
+      "title": "Tu B’Av",
+      "date": "2025-08-09",
+      "category": "holiday",
+      "title_orig": "Tu B'Av",
+      "memo": "Minor Jewish holiday of love. Observed on the 15th day of the Hebrew month of Av",
+      "hdate": "15 Av 5785"
+    },
+    {
+      "title": "Havdalah: 10:10pm",
+      "date": "2025-08-09T22:10:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 8:47pm",
+      "date": "2025-08-15T20:47:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Eikev"
+    },
+    {
+      "title": "Parashat Eikev",
+      "date": "2025-08-16",
+      "category": "parashat",
+      "hdate": "22 Av 5785"
+    },
+    {
+      "title": "Havdalah: 9:56pm",
+      "date": "2025-08-16T21:56:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 8:34pm",
+      "date": "2025-08-22T20:34:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Re’eh"
+    },
+    {
+      "title": "Parashat Re’eh",
+      "date": "2025-08-23",
+      "category": "parashat",
+      "title_orig": "Parashat Re'eh",
+      "hdate": "29 Av 5785"
+    },
+    {
+      "title": "Mevarchim Chodesh Elul",
+      "date": "2025-08-23",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Elul",
+      "memo": "Molad Elul: Saturday, 11:26pm and 6 chalakim",
+      "hdate": "29 Av 5785"
+    },
+    {
+      "title": "Havdalah: 9:41pm",
+      "date": "2025-08-23T21:41:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Rosh Chodesh Elul",
+      "date": "2025-08-24",
+      "category": "roshchodesh",
+      "memo": "Start of month of Elul on the Hebrew calendar. Elul (אֱלוּל) is the 12th month of the civil Hebrew year (13th on leap years) and the 6th month of the biblical Hebrew year. It has 29 days and corresponds to August or September on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "30 Av 5785"
+    },
+    {
+      "title": "Rosh Hashana LaBehemot",
+      "date": "2025-08-25",
+      "category": "holiday",
+      "memo": "New Year for Tithing Animals",
+      "hdate": "1 Elul 5785"
+    },
+    {
+      "title": "Rosh Chodesh Elul",
+      "date": "2025-08-25",
+      "category": "roshchodesh",
+      "memo": "Start of month of Elul on the Hebrew calendar. Elul (אֱלוּל) is the 12th month of the civil Hebrew year (13th on leap years) and the 6th month of the biblical Hebrew year. It has 29 days and corresponds to August or September on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Elul 5785"
+    },
+    {
+      "title": "Candle lighting: 8:20pm",
+      "date": "2025-08-29T20:20:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Shoftim"
+    },
+    {
+      "title": "Parashat Shoftim",
+      "date": "2025-08-30",
+      "category": "parashat",
+      "hdate": "6 Elul 5785"
+    },
+    {
+      "title": "Havdalah: 9:26pm",
+      "date": "2025-08-30T21:26:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 8:06pm",
+      "date": "2025-09-05T20:06:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Ki Teitzei"
+    },
+    {
+      "title": "Parashat Ki Teitzei",
+      "date": "2025-09-06",
+      "category": "parashat",
+      "hdate": "13 Elul 5785"
+    },
+    {
+      "title": "Havdalah: 9:10pm",
+      "date": "2025-09-06T21:10:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-09-07T05:36:00+02:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Candle lighting: 7:51pm",
+      "date": "2025-09-12T19:51:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Ki Tavo"
+    },
+    {
+      "title": "Parashat Ki Tavo",
+      "date": "2025-09-13",
+      "category": "parashat",
+      "hdate": "20 Elul 5785"
+    },
+    {
+      "title": "Leil Selichot",
+      "date": "2025-09-13",
+      "category": "holiday",
+      "memo": "Prayers for forgiveness in preparation for the High Holidays",
+      "hdate": "20 Elul 5785"
+    },
+    {
+      "title": "Havdalah: 8:55pm",
+      "date": "2025-09-13T20:55:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 7:36pm",
+      "date": "2025-09-19T19:36:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Nitzavim"
+    },
+    {
+      "title": "Parashat Nitzavim",
+      "date": "2025-09-20",
+      "category": "parashat",
+      "hdate": "27 Elul 5785"
+    },
+    {
+      "title": "Havdalah: 8:39pm",
+      "date": "2025-09-20T20:39:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Erev Rosh Hashana",
+      "date": "2025-09-22",
+      "category": "holiday",
+      "memo": "The Jewish New Year. Also spelled Rosh Hashanah",
+      "hdate": "29 Elul 5785"
+    },
+    {
+      "title": "Candle lighting: 7:30pm",
+      "date": "2025-09-22T19:30:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Erev Rosh Hashana"
+    },
+    {
+      "title": "Rosh Hashana 5786",
+      "date": "2025-09-23",
+      "category": "holiday",
+      "memo": "The Jewish New Year. Also spelled Rosh Hashanah",
+      "hdate": "1 Tishrei 5786"
+    },
+    {
+      "title": "Candle lighting: 8:33pm",
+      "date": "2025-09-23T20:33:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Rosh Hashana 5786"
+    },
+    {
+      "title": "Rosh Hashana II",
+      "date": "2025-09-24",
+      "category": "holiday",
+      "memo": "The Jewish New Year. Also spelled Rosh Hashanah",
+      "hdate": "2 Tishrei 5786"
+    },
+    {
+      "title": "Havdalah: 8:31pm",
+      "date": "2025-09-24T20:31:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah",
+      "memo": "Rosh Hashana II"
+    },
+    {
+      "title": "Fast begins",
+      "date": "2025-09-25T06:07:00+02:00",
+      "category": "zmanim",
+      "memo": "Tzom Gedaliah"
+    },
+    {
+      "title": "Tzom Gedaliah",
+      "date": "2025-09-25",
+      "category": "holiday",
+      "memo": "Fast of the Seventh Month. Commemorates the assassination of the Jewish governor of Judah",
+      "hdate": "3 Tishrei 5786"
+    },
+    {
+      "title": "Fast ends",
+      "date": "2025-09-25T20:20:00+02:00",
+      "category": "zmanim",
+      "memo": "Tzom Gedaliah"
+    },
+    {
+      "title": "Candle lighting: 7:21pm",
+      "date": "2025-09-26T19:21:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayeilech"
+    },
+    {
+      "title": "Parashat Vayeilech",
+      "date": "2025-09-27",
+      "category": "parashat",
+      "hdate": "5 Tishrei 5786"
+    },
+    {
+      "title": "Shabbat Shuva",
+      "date": "2025-09-27",
+      "category": "holiday",
+      "memo": "Shabbat of Returning. Shabbat that occurs during the Ten Days of Repentance between Rosh Hashanah and Yom Kippur",
+      "hdate": "5 Tishrei 5786"
+    },
+    {
+      "title": "Havdalah: 8:24pm",
+      "date": "2025-09-27T20:24:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Erev Yom Kippur",
+      "date": "2025-10-01",
+      "category": "holiday",
+      "memo": "Evening of Yom Kippur (Day of Atonement), which includes the Kol Nidre service. The Yom Kippur fast begins at sundown and continues for 25 hours",
+      "hdate": "9 Tishrei 5786"
+    },
+    {
+      "title": "Candle lighting: 7:11pm",
+      "date": "2025-10-01T19:11:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Erev Yom Kippur"
+    },
+    {
+      "title": "Yom Kippur",
+      "date": "2025-10-02",
+      "category": "holiday",
+      "memo": "Day of Atonement. The holiest day of the year in Judaism, traditionally observed with a 25-hour period of fasting and intensive prayer",
+      "hdate": "10 Tishrei 5786"
+    },
+    {
+      "title": "Havdalah: 8:14pm",
+      "date": "2025-10-02T20:14:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah",
+      "memo": "Yom Kippur"
+    },
+    {
+      "title": "Candle lighting: 7:07pm",
+      "date": "2025-10-03T19:07:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Ha’azinu"
+    },
+    {
+      "title": "Parashat Ha’azinu",
+      "date": "2025-10-04",
+      "category": "parashat",
+      "title_orig": "Parashat Ha'azinu",
+      "hdate": "12 Tishrei 5786"
+    },
+    {
+      "title": "Havdalah: 8:10pm",
+      "date": "2025-10-04T20:10:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Erev Sukkot",
+      "date": "2025-10-06",
+      "category": "holiday",
+      "memo": "Feast of Booths. Also called the Feast of Tabernacles, the seven-day holiday is one of the Three Pilgrimage Festivals (Hebrew: שלוש רגלים, shalosh regalim)",
+      "hdate": "14 Tishrei 5786"
+    },
+    {
+      "title": "Candle lighting: 7:00pm",
+      "date": "2025-10-06T19:00:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Erev Sukkot"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-10-06T19:00:00+02:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Sukkot I",
+      "date": "2025-10-07",
+      "category": "holiday",
+      "memo": "Feast of Booths. Also called the Feast of Tabernacles, the seven-day holiday is one of the Three Pilgrimage Festivals (Hebrew: שלוש רגלים, shalosh regalim)",
+      "hdate": "15 Tishrei 5786"
+    },
+    {
+      "title": "Candle lighting: 8:03pm",
+      "date": "2025-10-07T20:03:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Sukkot I"
+    },
+    {
+      "title": "Sukkot II",
+      "date": "2025-10-08",
+      "category": "holiday",
+      "memo": "Feast of Booths. Also called the Feast of Tabernacles, the seven-day holiday is one of the Three Pilgrimage Festivals (Hebrew: שלוש רגלים, shalosh regalim)",
+      "hdate": "16 Tishrei 5786"
+    },
+    {
+      "title": "Havdalah: 8:01pm",
+      "date": "2025-10-08T20:01:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah",
+      "memo": "Sukkot II"
+    },
+    {
+      "title": "Sukkot III (CH’’M)",
+      "date": "2025-10-09",
+      "category": "holiday",
+      "title_orig": "Sukkot III (CH''M)",
+      "memo": "Feast of Booths. Also called the Feast of Tabernacles, the seven-day holiday is one of the Three Pilgrimage Festivals (Hebrew: שלוש רגלים, shalosh regalim)",
+      "hdate": "17 Tishrei 5786"
+    },
+    {
+      "title": "Sukkot IV (CH’’M)",
+      "date": "2025-10-10",
+      "category": "holiday",
+      "title_orig": "Sukkot IV (CH''M)",
+      "memo": "Feast of Booths. Also called the Feast of Tabernacles, the seven-day holiday is one of the Three Pilgrimage Festivals (Hebrew: שלוש רגלים, shalosh regalim)",
+      "hdate": "18 Tishrei 5786"
+    },
+    {
+      "title": "Candle lighting: 6:52pm",
+      "date": "2025-10-10T18:52:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Sukkot Shabbat Chol ha-Moed"
+    },
+    {
+      "title": "Sukkot V (CH’’M)",
+      "date": "2025-10-11",
+      "category": "holiday",
+      "title_orig": "Sukkot V (CH''M)",
+      "memo": "Feast of Booths. Also called the Feast of Tabernacles, the seven-day holiday is one of the Three Pilgrimage Festivals (Hebrew: שלוש רגלים, shalosh regalim)",
+      "hdate": "19 Tishrei 5786"
+    },
+    {
+      "title": "Havdalah: 7:55pm",
+      "date": "2025-10-11T19:55:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Sukkot VI (CH’’M)",
+      "date": "2025-10-12",
+      "category": "holiday",
+      "title_orig": "Sukkot VI (CH''M)",
+      "memo": "Feast of Booths. Also called the Feast of Tabernacles, the seven-day holiday is one of the Three Pilgrimage Festivals (Hebrew: שלוש רגלים, shalosh regalim)",
+      "hdate": "20 Tishrei 5786"
+    },
+    {
+      "title": "Sukkot VII (Hoshana Raba)",
+      "date": "2025-10-13",
+      "category": "holiday",
+      "memo": "Feast of Booths. Also called the Feast of Tabernacles, the seven-day holiday is one of the Three Pilgrimage Festivals (Hebrew: שלוש רגלים, shalosh regalim)",
+      "hdate": "21 Tishrei 5786"
+    },
+    {
+      "title": "Candle lighting: 6:46pm",
+      "date": "2025-10-13T18:46:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Sukkot VII (Hoshana Raba)"
+    },
+    {
+      "title": "Shmini Atzeret",
+      "date": "2025-10-14",
+      "category": "holiday",
+      "memo": "Eighth Day of Assembly. Immediately following Sukkot, it is observed as a separate holiday in the Diaspora and is combined with Simchat Torah in Israel",
+      "hdate": "22 Tishrei 5786"
+    },
+    {
+      "title": "Candle lighting: 7:50pm",
+      "date": "2025-10-14T19:50:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Shmini Atzeret"
+    },
+    {
+      "title": "Simchat Torah",
+      "date": "2025-10-15",
+      "category": "holiday",
+      "memo": "Day of Celebrating the Torah. Celebration marking the conclusion of the annual cycle of public Torah readings, and the beginning of a new cycle",
+      "hdate": "23 Tishrei 5786"
+    },
+    {
+      "title": "Havdalah: 7:48pm",
+      "date": "2025-10-15T19:48:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah",
+      "memo": "Simchat Torah"
+    },
+    {
+      "title": "Swords of Iron War Memorial Day",
+      "date": "2025-10-16",
+      "category": "holiday",
+      "memo": "Israeli national memorial day commemorating the fallen victims of the October 7 attacks, and the soldiers of the Israel Defense Forces",
+      "hdate": "24 Tishrei 5786"
+    },
+    {
+      "title": "Candle lighting: 6:38pm",
+      "date": "2025-10-17T18:38:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Bereshit"
+    },
+    {
+      "title": "Parashat Bereshit",
+      "date": "2025-10-18",
+      "category": "parashat",
+      "hdate": "26 Tishrei 5786"
+    },
+    {
+      "title": "Mevarchim Chodesh Cheshvan",
+      "date": "2025-10-18",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Cheshvan",
+      "memo": "Molad Cheshvan: Wednesday, 12:54am and 8 chalakim",
+      "hdate": "26 Tishrei 5786"
+    },
+    {
+      "title": "Havdalah: 7:42pm",
+      "date": "2025-10-18T19:42:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Rosh Chodesh Cheshvan",
+      "date": "2025-10-22",
+      "category": "roshchodesh",
+      "memo": "Start of month of Cheshvan on the Hebrew calendar. חֶשְׁוָן (transliterated Cheshvan or Heshvan) is the 2nd month of the civil Hebrew year and the 8th month of the biblical Hebrew year. It has 29 or 30 days and corresponds to October or November on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "30 Tishrei 5786"
+    },
+    {
+      "title": "Rosh Chodesh Cheshvan",
+      "date": "2025-10-23",
+      "category": "roshchodesh",
+      "memo": "Start of month of Cheshvan on the Hebrew calendar. חֶשְׁוָן (transliterated Cheshvan or Heshvan) is the 2nd month of the civil Hebrew year and the 8th month of the biblical Hebrew year. It has 29 or 30 days and corresponds to October or November on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Cheshvan 5786"
+    },
+    {
+      "title": "Candle lighting: 6:25pm",
+      "date": "2025-10-24T18:25:00+02:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Noach"
+    },
+    {
+      "title": "Parashat Noach",
+      "date": "2025-10-25",
+      "category": "parashat",
+      "hdate": "3 Cheshvan 5786"
+    },
+    {
+      "title": "Havdalah: 7:30pm",
+      "date": "2025-10-25T19:30:00+02:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 5:13pm",
+      "date": "2025-10-31T17:13:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Lech-Lecha"
+    },
+    {
+      "title": "Parashat Lech-Lecha",
+      "date": "2025-11-01",
+      "category": "parashat",
+      "hdate": "10 Cheshvan 5786"
+    },
+    {
+      "title": "Havdalah: 6:19pm",
+      "date": "2025-11-01T18:19:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-11-05T06:07:00+01:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Candle lighting: 5:02pm",
+      "date": "2025-11-07T17:02:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayera"
+    },
+    {
+      "title": "Parashat Vayera",
+      "date": "2025-11-08",
+      "category": "parashat",
+      "hdate": "17 Cheshvan 5786"
+    },
+    {
+      "title": "Havdalah: 6:09pm",
+      "date": "2025-11-08T18:09:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 4:53pm",
+      "date": "2025-11-14T16:53:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Chayei Sara"
+    },
+    {
+      "title": "Parashat Chayei Sara",
+      "date": "2025-11-15",
+      "category": "parashat",
+      "hdate": "24 Cheshvan 5786"
+    },
+    {
+      "title": "Mevarchim Chodesh Kislev",
+      "date": "2025-11-15",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Kislev",
+      "memo": "Molad Kislev: Thursday, 1:38pm and 9 chalakim",
+      "hdate": "24 Cheshvan 5786"
+    },
+    {
+      "title": "Havdalah: 6:01pm",
+      "date": "2025-11-15T18:01:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Sigd",
+      "date": "2025-11-20",
+      "category": "holiday",
+      "memo": "Ethiopian Jewish holiday occurring 50 days after Yom Kippur",
+      "hdate": "29 Cheshvan 5786"
+    },
+    {
+      "title": "Rosh Chodesh Kislev",
+      "date": "2025-11-21",
+      "category": "roshchodesh",
+      "memo": "Start of month of Kislev on the Hebrew calendar. Kislev (כִּסְלֵו) is the 3rd month of the civil Hebrew year and the 9th month of the biblical Hebrew year. It has 30 or 29 days and corresponds to November or December on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Kislev 5786"
+    },
+    {
+      "title": "Candle lighting: 4:45pm",
+      "date": "2025-11-21T16:45:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Toldot"
+    },
+    {
+      "title": "Parashat Toldot",
+      "date": "2025-11-22",
+      "category": "parashat",
+      "hdate": "2 Kislev 5786"
+    },
+    {
+      "title": "Havdalah: 5:55pm",
+      "date": "2025-11-22T17:55:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 4:39pm",
+      "date": "2025-11-28T16:39:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayetzei"
+    },
+    {
+      "title": "Parashat Vayetzei",
+      "date": "2025-11-29",
+      "category": "parashat",
+      "hdate": "9 Kislev 5786"
+    },
+    {
+      "title": "Havdalah: 5:50pm",
+      "date": "2025-11-29T17:50:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Latest Kiddush Levana",
+      "date": "2025-12-05T06:39:00+01:00",
+      "category": "zmanim"
+    },
+    {
+      "title": "Candle lighting: 4:36pm",
+      "date": "2025-12-05T16:36:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayishlach"
+    },
+    {
+      "title": "Parashat Vayishlach",
+      "date": "2025-12-06",
+      "category": "parashat",
+      "hdate": "16 Kislev 5786"
+    },
+    {
+      "title": "Havdalah: 5:48pm",
+      "date": "2025-12-06T17:48:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Candle lighting: 4:35pm",
+      "date": "2025-12-12T16:35:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayeshev"
+    },
+    {
+      "title": "Parashat Vayeshev",
+      "date": "2025-12-13",
+      "category": "parashat",
+      "hdate": "23 Kislev 5786"
+    },
+    {
+      "title": "Mevarchim Chodesh Tevet",
+      "date": "2025-12-13",
+      "category": "mevarchim",
+      "title_orig": "Shabbat Mevarchim Chodesh Tevet",
+      "memo": "Molad Tevet: Saturday, 2:22am and 10 chalakim",
+      "hdate": "23 Kislev 5786"
+    },
+    {
+      "title": "Havdalah: 5:48pm",
+      "date": "2025-12-13T17:48:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Chanukah: 1 Candle",
+      "date": "2025-12-14T17:25:00+01:00",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)"
+    },
+    {
+      "title": "Chanukah: 2 Candles",
+      "date": "2025-12-15T17:25:00+01:00",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)"
+    },
+    {
+      "title": "Chanukah: 3 Candles",
+      "date": "2025-12-16T17:26:00+01:00",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)"
+    },
+    {
+      "title": "Chanukah: 4 Candles",
+      "date": "2025-12-17T17:26:00+01:00",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)"
+    },
+    {
+      "title": "Chanukah: 5 Candles",
+      "date": "2025-12-18T17:26:00+01:00",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)"
+    },
+    {
+      "title": "Chanukah: 6 Candles",
+      "date": "2025-12-19T16:37:00+01:00",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)"
+    },
+    {
+      "title": "Candle lighting: 4:37pm",
+      "date": "2025-12-19T16:37:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Miketz"
+    },
+    {
+      "title": "Parashat Miketz",
+      "date": "2025-12-20",
+      "category": "parashat",
+      "hdate": "30 Kislev 5786"
+    },
+    {
+      "title": "Chag HaBanot",
+      "date": "2025-12-20",
+      "category": "holiday",
+      "memo": "North African Chanukah festival of daughters. Called Eid al-Banat in Arabic, the holiday was most preserved in Tunisia",
+      "hdate": "30 Kislev 5786"
+    },
+    {
+      "title": "Rosh Chodesh Tevet",
+      "date": "2025-12-20",
+      "category": "roshchodesh",
+      "memo": "Start of month of Tevet on the Hebrew calendar. Tevet (טֵבֵת) is the 4th month of the civil Hebrew year and the 10th month of the biblical Hebrew year. It has 29 days and corresponds to December or January on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "30 Kislev 5786"
+    },
+    {
+      "title": "Chanukah: 7 Candles",
+      "date": "2025-12-20T17:50:00+01:00",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)"
+    },
+    {
+      "title": "Havdalah: 5:50pm",
+      "date": "2025-12-20T17:50:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Rosh Chodesh Tevet",
+      "date": "2025-12-21",
+      "category": "roshchodesh",
+      "memo": "Start of month of Tevet on the Hebrew calendar. Tevet (טֵבֵת) is the 4th month of the civil Hebrew year and the 10th month of the biblical Hebrew year. It has 29 days and corresponds to December or January on the Gregorian calendar. רֹאשׁ חוֹדֶשׁ, transliterated Rosh Chodesh or Rosh Hodesh, is a minor holiday that occurs at the beginning of every month in the Hebrew calendar. It is marked by the birth of a new moon",
+      "hdate": "1 Tevet 5786"
+    },
+    {
+      "title": "Chanukah: 8 Candles",
+      "date": "2025-12-21T17:27:00+01:00",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)"
+    },
+    {
+      "title": "Chanukah: 8th Day",
+      "date": "2025-12-22",
+      "category": "holiday",
+      "memo": "Hanukkah, the Jewish festival of rededication. Also known as the Festival of Lights, the eight-day festival is observed by lighting the candles of a hanukkiah (menorah)",
+      "hdate": "2 Tevet 5786"
+    },
+    {
+      "title": "Candle lighting: 4:41pm",
+      "date": "2025-12-26T16:41:00+01:00",
+      "category": "candles",
+      "title_orig": "Candle lighting",
+      "memo": "Parashat Vayigash"
+    },
+    {
+      "title": "Parashat Vayigash",
+      "date": "2025-12-27",
+      "category": "parashat",
+      "hdate": "7 Tevet 5786"
+    },
+    {
+      "title": "Havdalah: 5:54pm",
+      "date": "2025-12-27T17:54:00+01:00",
+      "category": "havdalah",
+      "title_orig": "Havdalah"
+    },
+    {
+      "title": "Fast begins",
+      "date": "2025-12-30T07:00:00+01:00",
+      "category": "zmanim",
+      "memo": "Asara B’Tevet"
+    },
+    {
+      "title": "Asara B’Tevet",
+      "date": "2025-12-30",
+      "category": "holiday",
+      "title_orig": "Asara B'Tevet",
+      "memo": "Fast commemorating the siege of Jerusalem",
+      "hdate": "10 Tevet 5786"
+    },
+    {
+      "title": "Fast ends",
+      "date": "2025-12-30T17:47:00+01:00",
+      "category": "zmanim",
+      "memo": "Asara B’Tevet"
+    }
+  ]
+}

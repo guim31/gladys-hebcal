@@ -30,6 +30,15 @@ Gladys before reporting a problem.
 
 In scope: the code of this repository and the Docker image it publishes.
 
+What the integration stores and exchanges:
+
+- `/data/fired-events.json`: the ids and times of the scene events fired in the last two days, so that a
+  restart does not fire them again. Nothing personal, no secret: the integration asks for no account, no
+  password and no API key.
+- Gladys: the integration reads the coordinates of the houses (`location: true` in the manifest) and sends
+  them nowhere. The position of the house appears, rounded to two decimals, in one log line at start.
+- Network: none besides Gladys. Everything is computed in the container.
+
 Out of scope: Gladys Assistant itself (see its
-[security policy](https://github.com/GladysAssistant/Gladys/security/policy)),
-and the third-party services and devices the integration talks to.
+[security policy](https://github.com/GladysAssistant/Gladys/security/policy)) and the `@hebcal/core`
+library.
