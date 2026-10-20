@@ -57,10 +57,10 @@ export const NAMES = {
 
 // Values of the text features and of the action outputs.
 export const VALUES = {
-  en: { none: 'None', unknown: 'Unknown' },
-  fr: { none: 'Aucune', unknown: 'Inconnu' },
-  de: { none: 'Keiner', unknown: 'Unbekannt' },
-  es: { none: 'Ninguna', unknown: 'Desconocido' },
+  en: { none: 'None' },
+  fr: { none: 'Aucun(e)' },
+  de: { none: 'Keine Angabe' },
+  es: { none: 'Ninguno' },
 };
 
 export const WIDGET_TEXT = {
@@ -119,7 +119,7 @@ export const WIDGET_TEXT = {
     shema: 'Spätestes Schma',
     midday: 'Mittag (Chazot)',
     sunset: 'Sonnenuntergang',
-    nightfall: 'Nachteinbruch (Zeit)',
+    nightfall: 'Nachteinbruch (Zet)',
     waiting: 'Warte auf die Koordinaten des Zuhauses.',
   },
   es: {
@@ -131,7 +131,7 @@ export const WIDGET_TEXT = {
     next: 'Próxima festividad',
     inDays: (name, days) =>
       days === 0 ? `${name}, hoy` : days === 1 ? `${name}, mañana` : `${name}, en ${days} días`,
-    until: (name, time) => `${name} hasta las ${time}`,
+    until: (name, time) => `${name} hasta el ${time}`,
     dawn: 'Alba (alot hashajar)',
     sunrise: 'Salida del sol',
     shema: 'Último Shemá',

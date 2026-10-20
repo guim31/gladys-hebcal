@@ -65,7 +65,7 @@ caso. Elija explícitamente si su comunidad sigue el otro calendario.
 | Sensor                           | Valor                                                                              |
 | -------------------------------- | ---------------------------------------------------------------------------------- |
 | Fecha hebrea                     | «9 Jeshván 5787». Cambia con la puesta del sol, como el día hebreo                 |
-| Festividad de hoy                | La festividad, Rosh Jódesh, el ayuno o el día de Janucá («Janucá 3/8»), «Ninguna»  |
+| Festividad de hoy                | La festividad, Rosh Jódesh, el ayuno o el día de Janucá («Janucá 3/8»), «Ninguno»  |
 | Shabat o festividad en curso     | Encendido del encendido de velas a la havdalá (Shabat, Yom Kipur, días de yom tov) |
 | Shabat o festividad mañana       | Encendido cuando el día de mañana es Shabat o un día de yom tov                    |
 | Próximo encendido de velas       | «vie, 23 oct, 18:27»                                                               |

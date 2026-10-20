@@ -16,7 +16,7 @@ const minutesOf = (events) => events.map((e) => e.data.minutes_before);
 test('a weekday: the date, the next times and the portion, nothing under way', async () => {
   const world = await createWorld({ at: '2026-10-20T10:00:00Z' });
   assert.equal(world.state('hebrew_date'), "9 'Hechvan 5787");
-  assert.equal(world.state('holiday'), 'Aucune');
+  assert.equal(world.state('holiday'), 'Aucun(e)');
   assert.equal(world.state('holy_day'), 0);
   assert.equal(world.state('holy_day_tomorrow'), 0);
   assert.equal(world.state('next_candle_lighting'), 'ven. 23 oct., 18:27');
@@ -169,4 +169,36 @@ test('values are read-only', async () => {
   const [device] = world.gladys.fake.discoveredDevices;
   const ack = await world.gladys.fake.setValue(device, device.features[2], 1);
   assert.equal(ack.success, false);
+});
+
+test('a failed read of the houses keeps the calendar, and is retried at the next tick', async () => {
+  const world = await createWorld({ at: '2026-10-23T12:00:00Z' });
+  const getHouses = world.gladys.getHouses;
+  world.gladys.getHouses = async () => {
+    throw new Error('connect ECONNREFUSED');
+  };
+  await world.gladys.disconnect();
+  await world.gladys.connect();
+  assert.ok(world.service.calendar, 'the known house is kept');
+  assert.deepEqual(world.gladys.fake.connectionStatus, { connected: true });
+
+  // Without any house known yet: retried at the next tick, not in 10 minutes.
+  const fresh = await createWorld({ connect: false });
+  fresh.gladys.getHouses = async () => {
+    throw new Error('connect ECONNREFUSED');
+  };
+  await fresh.gladys.connect();
+  assert.equal(fresh.service.calendar, null);
+  fresh.gladys.getHouses = getHouses;
+  await fresh.runUntil('2026-10-20T10:00:20Z');
+  assert.ok(fresh.service.calendar);
+});
+
+test('a new candle lighting time does not fire the same reminders again', async () => {
+  const world = await createWorld({ at: '2026-10-23T16:00:00Z' });
+  await world.runUntil('2026-10-23T16:20:00Z');
+  const before = world.events('candle_lighting').length;
+  await world.gladys.fake.configUpdated({ candle_minutes: 15 });
+  await world.runUntil('2026-10-23T16:25:00Z');
+  assert.equal(world.events('candle_lighting').length, before);
 });

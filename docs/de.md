@@ -63,17 +63,17 @@ ausdrücklich, wenn deine Gemeinde dem anderen Kalender folgt.
 
 ## Das Kalendergerät
 
-| Sensor                         | Wert                                                                                   |
-| ------------------------------ | -------------------------------------------------------------------------------------- |
-| Hebräisches Datum              | „9 Cheschwan 5787". Wechselt bei Sonnenuntergang, wie der hebräische Tag               |
-| Feiertag heute                 | Der Feiertag, Rosch Chodesch, Fasttag oder Tag von Chanukka („Chanukka 3/8"), „Keiner" |
-| Schabbat oder Feiertag jetzt   | An vom Kerzenzünden bis zur Hawdala (Schabbat, Jom Kippur, Jom-Tov-Tage)               |
-| Schabbat oder Feiertag morgen  | An, wenn der morgige Tag ein Schabbat oder ein Jom-Tov-Tag ist                         |
-| Nächstes Kerzenzünden          | „Fr., 23. Okt., 18:27"                                                                 |
-| Nächste Hawdala                | „Sa., 24. Okt., 19:32"                                                                 |
-| Wochenabschnitt                | Der Abschnitt des kommenden Schabbats oder der stattdessen gelesene Feiertag           |
-| Omerzählung                    | Der Tag des Omer (1 bis 49), 0 außerhalb der Zählung. Wechselt bei Sonnenuntergang     |
-| Tage bis zum nächsten Feiertag | Tage bis zum nächsten Jom-Tov-Tag (0 am Tag selbst)                                    |
+| Sensor                         | Wert                                                                                         |
+| ------------------------------ | -------------------------------------------------------------------------------------------- |
+| Hebräisches Datum              | „9 Cheschwan 5787". Wechselt bei Sonnenuntergang, wie der hebräische Tag                     |
+| Feiertag heute                 | Der Feiertag, Rosch Chodesch, Fasttag oder Tag von Chanukka („Chanukka 3/8"), „Keine Angabe" |
+| Schabbat oder Feiertag jetzt   | An vom Kerzenzünden bis zur Hawdala (Schabbat, Jom Kippur, Jom-Tov-Tage)                     |
+| Schabbat oder Feiertag morgen  | An, wenn der morgige Tag ein Schabbat oder ein Jom-Tov-Tag ist                               |
+| Nächstes Kerzenzünden          | „Fr., 23. Okt., 18:27"                                                                       |
+| Nächste Hawdala                | „Sa., 24. Okt., 19:32"                                                                       |
+| Wochenabschnitt                | Der Abschnitt des kommenden Schabbats oder der stattdessen gelesene Feiertag                 |
+| Omerzählung                    | Der Tag des Omer (1 bis 49), 0 außerhalb der Zählung. Wechselt bei Sonnenuntergang           |
+| Tage bis zum nächsten Feiertag | Tage bis zum nächsten Jom-Tov-Tag (0 am Tag selbst)                                          |
 
 Jeder Wert wird von der Integration gesendet, wenn er sich ändert (bei Sonnenuntergang, beim
 Kerzenzünden, bei der Hawdala), und alle 12 Stunden erneut veröffentlicht: Es gibt nichts abzufragen.

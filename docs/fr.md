@@ -63,17 +63,17 @@ Choisissez explicitement si votre communauté suit l'autre calendrier.
 
 ## L'appareil calendrier
 
-| Capteur                       | Valeur                                                                                |
-| ----------------------------- | ------------------------------------------------------------------------------------- |
-| Date hébraïque                | « 9 'Hechvan 5787 ». Change au coucher du soleil, comme le jour hébraïque             |
-| Fête du jour                  | La fête, Roch 'Hodech, le jeûne ou le jour de 'Hanouka (« 'Hanouka 3/8 »), « Aucune » |
-| Chabbat ou fête en cours      | Allumé de l'allumage des bougies à la havdala (chabbat, Kippour, jours de yom tov)    |
-| Chabbat ou fête demain        | Allumé quand la journée de demain est un chabbat ou un jour de yom tov                |
-| Prochain allumage des bougies | « ven. 23 oct., 18:27 »                                                               |
-| Prochaine havdala             | « sam. 24 oct., 19:32 »                                                               |
-| Paracha de la semaine         | La paracha du prochain chabbat, ou la fête lue à sa place                             |
-| Compte du Omer                | Le jour du Omer (1 à 49), 0 hors du compte. Change au coucher du soleil               |
-| Jours avant la prochaine fête | Jours avant le prochain jour de yom tov (0 le jour même)                              |
+| Capteur                       | Valeur                                                                                  |
+| ----------------------------- | --------------------------------------------------------------------------------------- |
+| Date hébraïque                | « 9 'Hechvan 5787 ». Change au coucher du soleil, comme le jour hébraïque               |
+| Fête du jour                  | La fête, Roch 'Hodech, le jeûne ou le jour de 'Hanouka (« 'Hanouka 3/8 »), « Aucun(e) » |
+| Chabbat ou fête en cours      | Allumé de l'allumage des bougies à la havdala (chabbat, Kippour, jours de yom tov)      |
+| Chabbat ou fête demain        | Allumé quand la journée de demain est un chabbat ou un jour de yom tov                  |
+| Prochain allumage des bougies | « ven. 23 oct., 18:27 »                                                                 |
+| Prochaine havdala             | « sam. 24 oct., 19:32 »                                                                 |
+| Paracha de la semaine         | La paracha du prochain chabbat, ou la fête lue à sa place                               |
+| Compte du Omer                | Le jour du Omer (1 à 49), 0 hors du compte. Change au coucher du soleil                 |
+| Jours avant la prochaine fête | Jours avant le prochain jour de yom tov (0 le jour même)                                |
 
 Chaque valeur est envoyée par l'intégration quand elle change (au coucher du soleil, à l'allumage, à la
 havdala) et republiée toutes les 12 heures : il n'y a rien à interroger. Des jours consécutifs (une fête

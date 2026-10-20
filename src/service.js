@@ -77,6 +77,7 @@ export class HebcalService {
     this.timer = null;
     this.queue = Promise.resolve();
     this.fired = null;
+    this.housesFailed = false;
     this.failures = createFailureLog(logger);
   }
 
@@ -90,10 +91,13 @@ export class HebcalService {
   start(config) {
     return this.serial(async () => {
       this.applyConfig(config);
-      await this.locate();
-      await this.publishDevice();
-      await this.step({ force: true });
-      this.startClock();
+      try {
+        await this.locate();
+        await this.publishDevice();
+        await this.step({ force: true });
+      } finally {
+        this.startClock();
+      }
     });
   }
 
@@ -101,8 +105,11 @@ export class HebcalService {
   resync(config) {
     return this.serial(async () => {
       this.applyConfig(config);
+      // The configuration may have changed while disconnected.
+      this.buildCalendar();
       await this.locate();
       await this.step({ force: true });
+      this.startClock();
     });
   }
 
@@ -152,12 +159,20 @@ export class HebcalService {
   /** Reads the houses of Gladys; without coordinates, nothing can be computed. */
   async locate() {
     this.lastLocate = this.now();
-    let houses = [];
+    let houses;
     try {
       houses = await this.gladys.getHouses();
+      this.housesFailed = false;
       this.failures.succeeded('houses', 'Houses read again');
     } catch (err) {
+      // Gladys restarting: keep the house already known, and try again at
+      // the next tick rather than in 10 minutes.
+      this.housesFailed = true;
       this.failures.failed('houses', `Could not read the houses: ${err.message}`);
+      if (this.calendar) {
+        return;
+      }
+      houses = [];
     }
     const house = pickHouse(houses);
     const moved =
@@ -222,7 +237,10 @@ export class HebcalService {
   }
 
   async step({ force = false } = {}) {
-    if (!this.calendar && this.now() - this.lastLocate >= LOCATION_RETRY_MS) {
+    if (
+      !this.calendar &&
+      (this.housesFailed || this.now() - this.lastLocate >= LOCATION_RETRY_MS)
+    ) {
       await this.locate();
     }
     if (!this.calendar) {

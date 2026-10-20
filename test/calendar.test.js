@@ -57,3 +57,20 @@ test('the configuration is completed and bounded, Israel guessed from the time z
   assert.equal(isIsrael({ region: 'israel' }, 'Europe/Paris'), true);
   assert.equal(isIsrael({ region: 'diaspora' }, 'Asia/Jerusalem'), false);
 });
+
+test('in Israel, 18 minutes stay 18 (hebcal would turn them into its city default)', () => {
+  const telAviv = (candleMinutes) =>
+    new HouseCalendar({
+      latitude: 32.0853,
+      longitude: 34.7818,
+      timeZone: 'Asia/Jerusalem',
+      il: true,
+      candleMinutes,
+      havdalah: 'deg_8_5',
+    })
+      .timeline(Date.parse('2026-10-20T10:00:00Z'))
+      .candles.find((c) => c.at.getTime() > Date.parse('2026-10-22T00:00:00Z'))
+      .at.getTime();
+  assert.equal(telAviv(17) - telAviv(18), 60_000);
+  assert.equal(telAviv(18) - telAviv(19), 60_000);
+});

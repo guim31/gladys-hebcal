@@ -84,7 +84,10 @@ export class HouseCalendar {
   constructor({ latitude, longitude, timeZone, il, candleMinutes, havdalah }) {
     this.timeZone = timeZone;
     this.il = il;
-    this.location = new Location(latitude, longitude, il, timeZone);
+    // Israel goes through `il` only: a Location flagged Israel makes hebcal
+    // replace 18 candle-lighting minutes by its own city default (20 without
+    // a known city), whatever the configuration says.
+    this.location = new Location(latitude, longitude, false, timeZone);
     this.options = {
       location: this.location,
       il,
@@ -100,6 +103,11 @@ export class HouseCalendar {
 
   civil(ms) {
     return civilDate(ms, this.timeZone);
+  }
+
+  /** "2026-10-23": the civil day of an instant, in the house's time zone. */
+  dayOf(ms) {
+    return civilKey(this.civil(ms));
   }
 
   /** The zmanim of a civil day. */
@@ -267,7 +275,9 @@ export class HouseCalendar {
   day(civil) {
     const hd = toHDate(civil);
     const noon = this.zmanim(civil).chatzot();
-    const midday = valid(noon) ? noon.getTime() : Date.UTC(civil.y, civil.m - 1, civil.d, 12);
+    const midday = valid(noon)
+      ? noon.getTime()
+      : new Date(civil.y, civil.m - 1, civil.d, 12).getTime();
     const { candles, havdalot } = this.timeline(midday);
     const sameDay = (entry) => civilKey(this.civil(entry.at.getTime())) === civilKey(civil);
     return {
@@ -315,15 +325,17 @@ export class HouseCalendar {
     for (const candle of candles) {
       const at = candle.at.getTime();
       for (const minutes of offsets) {
-        add('candle_lighting', `${candle.at.toISOString()}:${minutes}`, at - minutes * 60000, {
+        // Keyed by the civil day, not the instant: a time moved by a new
+        // configuration (18 -> 15 minutes) is not fired a second time.
+        add('candle_lighting', `${this.dayOf(at)}:${minutes}`, at - minutes * 60000, {
           candle,
           minutes,
         });
       }
     }
     for (const period of periods) {
-      add('holy_day_start', new Date(period.start).toISOString(), period.start, { period });
-      add('holy_day_end', new Date(period.end).toISOString(), period.end, { period });
+      add('holy_day_start', this.dayOf(period.start), period.start, { period });
+      add('holy_day_end', this.dayOf(period.end), period.end, { period });
     }
     return events.sort((a, b) => a.at - b.at);
   }

@@ -1,7 +1,6 @@
 // -----------------------------------------------------------------------------
 // Small JSON files in /data, the only writable place of the container: the
-// school calendar read from the ministry, and the last scene-trigger hour
-// fired. Best effort: a read or write failure is logged, never thrown.
+// scene events already fired. Best effort: a read or write failure is logged, never thrown.
 //
 // Locally, HEBCAL_DATA_DIR points the store at any folder (the `.gitignore`
 // keeps a root `data/` folder out of the repository).
@@ -19,7 +18,7 @@ export function defaultDataDir() {
 }
 
 export function createStore(dir = defaultDataDir()) {
-  // scheduler.json is written every hour: an unwritable /data warns once.
+  // fired-events.json is written at every scene event: an unwritable /data warns once.
   const failures = createFailureLog(logger);
   return {
     dir,
