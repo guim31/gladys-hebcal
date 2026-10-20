@@ -10,6 +10,8 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-10-20
+
 ### Added
 
 - The Hebrew calendar of the house, computed locally with `@hebcal/core` (the engine of hebcal.com): no
@@ -24,3 +26,6 @@ the notes of the version's GitHub Release.
 - Settings: Israel or diaspora, candle lighting minutes, end of Shabbat (8.5° or 42, 50, 72 minutes),
   names in the local language, transliterated or in Hebrew script; texts in English, French, German and
   Spanish.
+
+[Unreleased]: https://github.com/guim31/gladys-hebcal/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/guim31/gladys-hebcal/releases/tag/v1.0.0
