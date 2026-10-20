@@ -1,41 +1,42 @@
 // -----------------------------------------------------------------------------
-// Scene actions (SDK v0.14+, Gladys 5.1+).
-//
-// A scene action is an OPERATION a scene author places in a scene, with
-// parameters and a result: "identify this device", "take a snapshot", "clean
-// these rooms". Each one is declared in the manifest `scene_actions` field
-// (key, label, `fields` in the config_schema grammar, scalar `outputs`) and
-// handled here, keyed by that same `key`; index.js registers every entry with
-// `gladys.onSceneAction(key, ...)`.
-//
-// Scene TRIGGERS are the other direction ("this happened"): they are fired by
-// the device that observes the event, see src/devices/motionSensor.js.
-//
-// The rules that matter:
-//   - `fields` arrive RESOLVED: scene variables substituted, defaults applied,
-//     validated by the core; a `"source": "devices"` field is the chosen
-//     device external_id;
-//   - resolve an object of the declared `outputs` (scalars only), readable by
-//     the following actions of the scene, or `undefined` for none. Keys not
-//     declared in the manifest are dropped by the core;
-//   - throwing fails THIS action only: the scene logs it and continues. A
-//     scene action is never a condition: return an output and let the scene
-//     author gate on it;
-//   - never fire a scene event as a consequence of a received action: a scene
-//     bound to that event would loop through the integration.
+// Scene action "Day information": today or tomorrow, as a whole civil day.
+// The following steps of the scene read its outputs ({{<column>.<row>.<key>}})
+// and test them with a "Condition on variables" — "skip the alarm clock if
+// tomorrow is Shabbat or a holiday". The yes/no output is a number (1 = yes,
+// 0 = no): that condition compares strictly, and nothing typed there can
+// equal a boolean. Times are local ("18:27"), '' when the day has none.
 // -----------------------------------------------------------------------------
 
-import { createLogger } from '@gladysassistant/integration-sdk';
-import { signalDevice } from './devices/index.js';
-
-const logger = createLogger({ name: 'scenes' });
+import { addCivilDays, civilKey } from './calendar.js';
+import { formatTime } from './i18n.js';
+import { holidaysText, parshaText } from './view.js';
 
 export const SCENE_ACTIONS = {
-  // The ack is awaited under the action's `timeout_seconds` (15 s in the
-  // manifest), counted from the moment the scene reaches the action.
-  async identify_device(gladys, { fields, config }) {
-    logger.info(`Scene action identify_device <- ${fields.device}`);
-    const signalled = await signalDevice(gladys, fields.device, config);
-    return { signalled };
+  day_info: async (service, { fields = {} }) => {
+    const calendar = service.calendar;
+    if (!calendar) {
+      throw new Error('No house with coordinates in Gladys yet');
+    }
+    const { language } = service.config;
+    const tz = service.timeZone;
+    const today = calendar.civil(service.now());
+    const civil = fields.day === 'tomorrow' ? addCivilDays(today, 1) : today;
+    const day = calendar.day(civil);
+    const namer = service.namer;
+    const time = (date, rounding) => (date ? formatTime(date, language, tz, rounding) : '');
+    return {
+      date: civilKey(civil),
+      hebrew_date: namer.date(day.hebrewDate),
+      holiday: holidaysText(day.holidays, namer),
+      is_holy_day: day.holyDay ? 1 : 0,
+      candle_lighting: time(day.candles?.at),
+      havdalah: time(day.havdalah?.at),
+      parsha: parshaText(day.parsha, namer),
+      omer: day.omer,
+      sunrise: time(day.zmanim.sunrise),
+      latest_shema: time(day.zmanim.shema, 'down'),
+      sunset: time(day.zmanim.sunset),
+      nightfall: time(day.zmanim.nightfall, 'up'),
+    };
   },
 };

@@ -1,45 +1,75 @@
 // -----------------------------------------------------------------------------
-// Integration configuration.
-//
-// The configuration is filled in by the user in Gladys, from the `config_schema`
-// declared in `gladys-assistant-integration.json`. The SDK fetches it for you
-// (`gladys.getConfig()`) and notifies you of every change through
-// `gladys.onConfigUpdated()`.
-//
-// This module only provides defaults and normalizes the received object, so the
-// rest of the code never has to deal with `undefined`.
+// Configuration: DEFAULT_CONFIG mirrors the manifest defaults (tied by
+// test/manifest.test.js), and normalizeConfig() turns whatever Gladys sends (a
+// field never saved is absent, a number may arrive as a string) into a
+// complete, valid object. Nothing here throws: a wrong value falls back to its
+// default.
 // -----------------------------------------------------------------------------
 
-// Defaults: they MUST stay consistent with the `default` values declared in the
-// `config_schema` of the manifest.
-export const DEFAULT_CONFIG = {
-  latitude: 48.8566, // Paris
-  longitude: 2.3522,
-  unit: 'celsius', // 'celsius' | 'fahrenheit'
-  // Seconds between two reads of the polled sensors. Gladys polls at most once
-  // a minute: slower intervals are applied by skipping polls (see
-  // createPoller in src/devices/index.js).
-  poll_frequency: 300,
-  // Reserved key (NOT in config_schema): because the manifest declares both
-  // 'local' and 'cloud' in its `transports` field, Gladys shows a standard
-  // "Prefer the local connection" toggle and sends the user's choice here.
-  // Read-only for the integration; defaults to true.
-  GLADYS_PREFER_LOCAL: true,
+export const LANGUAGES = ['en', 'fr', 'de', 'es'];
+
+// How holiday, month and parsha names are written.
+//   local     in the language of the texts (transliteration when no usual name)
+//   sephardic the transliteration of hebcal.com ("Pesach", "Shavuot")
+//   ashkenazi the Ashkenazi transliteration ("Pesach", "Shavuos")
+//   hebrew    Hebrew script, without vowel points
+export const NAME_STYLES = ['local', 'sephardic', 'ashkenazi', 'hebrew'];
+
+// auto: Israel when the time zone of Gladys is Israel's, diaspora otherwise.
+export const REGIONS = ['auto', 'diaspora', 'israel'];
+
+// End of Shabbat and holidays: the sun 8.5° below the horizon (hebcal.com's
+// default, three small stars), or a fixed number of minutes after sunset.
+export const HAVDALAH_METHODS = {
+  deg_8_5: { havdalahDeg: 8.5 },
+  min_42: { havdalahMins: 42 },
+  min_50: { havdalahMins: 50 },
+  min_72: { havdalahMins: 72 },
 };
 
+export const CANDLE_MINUTES = { min: 0, max: 90 };
+
+const ISRAEL_TIME_ZONES = ['Asia/Jerusalem', 'Asia/Tel_Aviv'];
+
+export const DEFAULT_CONFIG = {
+  language: 'fr',
+  names: 'local',
+  region: 'auto',
+  candle_minutes: 18,
+  havdalah: 'deg_8_5',
+};
+
+const pick = (value, allowed, fallback) => (allowed.includes(value) ? value : fallback);
+
 /**
- * Merge the user config with the defaults.
- * @param {Record<string, unknown>} raw config returned by the SDK
+ * @param {object} [raw] the configuration sent by Gladys
+ * @returns {object} DEFAULT_CONFIG's keys with valid values
  */
 export function normalizeConfig(raw = {}) {
+  const source = raw ?? {};
+  const minutes = Number(String(source.candle_minutes ?? '').replace(',', '.'));
   return {
-    ...DEFAULT_CONFIG,
-    ...raw,
-    // Force the types: config may arrive as strings from a form.
-    latitude: Number(raw.latitude ?? DEFAULT_CONFIG.latitude),
-    longitude: Number(raw.longitude ?? DEFAULT_CONFIG.longitude),
-    poll_frequency: Number(raw.poll_frequency ?? DEFAULT_CONFIG.poll_frequency),
-    // The preference is a boolean; anything but an explicit false means true.
-    GLADYS_PREFER_LOCAL: raw.GLADYS_PREFER_LOCAL !== false,
+    language: pick(source.language, LANGUAGES, DEFAULT_CONFIG.language),
+    names: pick(source.names, NAME_STYLES, DEFAULT_CONFIG.names),
+    region: pick(source.region, REGIONS, DEFAULT_CONFIG.region),
+    candle_minutes:
+      source.candle_minutes !== undefined &&
+      source.candle_minutes !== null &&
+      source.candle_minutes !== '' &&
+      Number.isFinite(minutes)
+        ? Math.min(Math.max(Math.round(minutes), CANDLE_MINUTES.min), CANDLE_MINUTES.max)
+        : DEFAULT_CONFIG.candle_minutes,
+    havdalah: pick(source.havdalah, Object.keys(HAVDALAH_METHODS), DEFAULT_CONFIG.havdalah),
   };
+}
+
+/** Israel or the diaspora: the holidays and the weekly readings differ. */
+export function isIsrael(config, timeZone) {
+  if (config.region === 'israel') {
+    return true;
+  }
+  if (config.region === 'diaspora') {
+    return false;
+  }
+  return ISRAEL_TIME_ZONES.includes(timeZone);
 }
