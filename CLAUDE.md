@@ -31,16 +31,22 @@ pushing.
 ## Architecture
 
 ```
-index.js                          SDK wiring only: handlers registered before connect()
-src/devices/index.js              registry of the device blueprints + dispatch helpers
-src/devices/<type>.js             one device type per file (buildDevice, onPoll, onSetValue...)
+index.js                          SDK wiring only (src/app.js registers the handlers)
+src/app.js                        every SDK handler -> the service
+src/service.js                    the clock (20 s): house, states, scene events, widget refresh
+src/calendar.js                   @hebcal/core -> Hebrew date, holidays, periods, zmanim (pure)
+src/names.js                      names of holidays, months, portions in the chosen style
+src/view.js                       calendar values -> texts
+src/device.js                     the "Hebrew calendar" device and its values
 src/scenes.js                     scene action handlers (manifest `scene_actions`)
 src/widgets.js                    dashboard widget handlers (manifest `widgets`)
+src/i18n.js                       every text of the code in four languages, time formats
 src/config.js                     DEFAULT_CONFIG (mirrors the manifest defaults) + normalization
-src/weather.js                    example driver (Open-Meteo)
-gladys-assistant-integration.json manifest: name, config_schema, actions, image...
-docs/en.md, docs/fr.md            user documentation, re-hosted by Gladys (mandatory)
+src/store.js                      JSON files in /data (fired scene events)
+gladys-assistant-integration.json manifest: name, config_schema, triggers, widget...
+docs/{en,fr,de,es}.md             user documentation, re-hosted by Gladys (en and fr mandatory)
 test/                             node --test, against the SDK's fake Gladys (integration-sdk/testing)
+test/fixtures/hebcal-com/         answers of hebcal.com, the reference (2025-2027)
 .github/scripts/release.mjs       release helpers (manifest bump, changelog), tested in test/
 ```
 
@@ -70,12 +76,39 @@ test/                             node --test, against the SDK's fake Gladys (in
   `type: "provider"`: 5.1.0). `test/manifest.test.js` ties the manifest to the
   code (defaults, action, scene and widget handlers): change both sides
   together.
-- **User-facing text** is bilingual (English and French): action messages,
-  manifest texts, and `docs/en.md` / `docs/fr.md`, kept in sync.
+- **User-facing text** exists in English, French, German and Spanish: action
+  messages, manifest texts, feature names, widget texts, and `docs/en.md`,
+  `docs/fr.md`, `docs/de.md`, `docs/es.md`, kept in sync (`test/i18n.test.js`).
 - **Style.** Prettier formats, ESLint catches mistakes. Comments explain why,
   in English. Tests never touch the network.
 
 ---
+
+## Hebrew calendar
+
+- **License: GPL-3.0-or-later**, not the Apache-2.0 of the template: `@hebcal/core` (and its
+  `@hebcal/hdate`, `@hebcal/noaa`) is GPL-2.0-or-later and ships in the image; GPLv3 is the license
+  compatible with both it and the Apache-2.0 SDK. Do not switch back.
+- **hebcal.com is the reference.** `test/reference.test.js` compares every candle lighting, havdalah,
+  weekly portion, holiday and Omer day with recorded answers of its API (Paris 18 min / 8.5°, Jerusalem
+  Israel 40 min / 8.5°, New York 18 min / 50 min, 2025-2027). The API truncates long answers: record
+  month by month (`start`/`end`), never `year=` with `d=on`.
+- **The Hebrew day starts at sunset**: Hebrew date, holiday of the day and Omer switch at sunset.
+  hebcal's "Chanukah: N Candles" names the candles of the evening of the civil day: shown as the day of
+  Chanukah instead (`chanukahDay`). Yom Kippur Katan and BeHaB are left out, as hebcal.com does by
+  default.
+- **Periods** = from a candle lighting to the next havdalah. The candle lighting of a second evening (at
+  nightfall) belongs to the period under way: one start, one end for consecutive days. A period longer
+  than four days (missing havdalah near the poles) is dropped.
+- **Civil days**: hebcal reads the local fields of a `Date`; a civil day of the house is turned into
+  `new Date(y, m - 1, d)` from its date in the time zone of Gladys, whatever the time zone of the process.
+- **Costs**: the snapshot runs every 20 s; day-level values are memoized per civil and Hebrew day, Intl
+  formatters are kept (`new Intl.DateTimeFormat` costs more than `format`).
+- **Scene events**: candle lighting fires one event per offset (0, 10, 15, 30, 60, 120 min): the
+  `minutes_before` filter is `required`, otherwise a scene would run six times. Fired ids are kept two
+  days in `/data/fired-events.json`; catch-up 15 minutes after a restart.
+- **Zmanim rounding**: latest Shema rounded down, nightfall up, the rest to the nearest minute. Candle
+  lighting and havdalah come rounded from hebcal.
 
 # Notes du mainteneur (guim31)
 

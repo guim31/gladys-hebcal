@@ -1,67 +1,145 @@
-# Template de démonstration
+# Calendrier hébraïque
 
-Ceci est la documentation utilisateur de l'intégration. Gladys ré-héberge ce
-fichier et affiche un lien **Documentation** permanent vers lui dans l'écran
-de configuration (dans la langue de l'utilisateur, avec l'anglais en repli) —
-c'est au moment de configurer que l'utilisateur en a le plus besoin. Gardez
-les courtes indications d'accueil dans les blocs `section` du `config_schema`
-du manifest ; mettez ici le pas-à-pas détaillé (captures d'écran, dépannage…).
+Le calendrier juif de votre maison dans Gladys : la date hébraïque, le chabbat et les fêtes, les heures
+d'allumage des bougies et de havdala, la paracha de la semaine, le Omer et les principaux zmanim. En capteurs
+pour le tableau de bord et les conditions des scènes, et en déclencheurs de scène : tamiser les lumières à
+l'allumage des bougies, couper le réveil les matins de chabbat et de fête, recevoir un rappel une heure avant
+chabbat.
 
-## Ce que vous obtenez
+- **Calculé chez vous**, avec le moteur de [hebcal.com](https://www.hebcal.com) (`@hebcal/core`) : pas de
+  compte, pas d'accès à Internet, rien ne sort de votre Gladys.
+- **Israël ou diaspora** : un ou deux jours de fête, et la paracha qui va avec.
+- **Les usages de votre communauté** : minutes d'allumage avant le coucher du soleil (18, 40 à Jérusalem…) et
+  fin du chabbat (8,5° ou 42, 50, 72 minutes).
 
-Six appareils de démonstration apparaissent après l'installation : une
-station météo (vraies données Open-Meteo), un interrupteur, une lampe
-variable, une prise connectée avec mesure de puissance, un détecteur de
-mouvement et une caméra.
+> Testée par sa suite de tests automatiques contre les horaires publiés par hebcal.com (Paris, Jérusalem,
+> New York, de 2025 à 2027), pas encore sur beaucoup d'installations Gladys réelles : vos retours sont les
+> bienvenus sur le forum Gladys ou dans les issues GitHub. Les horaires sont donnés à titre indicatif :
+> suivez votre rabbin pour les décisions halakhiques.
+
+## Ce qu'il faut
+
+- Gladys Assistant 5.1.0 ou plus récent.
+- Une maison avec ses coordonnées dans Gladys (**Paramètres → Maisons**) : les horaires dépendent de la
+  position de la maison.
+- Le bon fuseau horaire dans Gladys (**Paramètres → Système**) : toutes les heures sont calculées et
+  affichées dans ce fuseau.
 
 ## Configuration
 
-1. Ouvrez l'onglet **Configuration** de l'intégration.
-2. Renseignez la **latitude** et la **longitude** que la station météo de
-   démonstration doit observer (Paris par défaut), et choisissez votre unité
-   de température. L'**intervalle de rafraîchissement** règle la fréquence
-   de lecture de la station météo et de la puissance de la prise : toutes
-   les 5 minutes par défaut, toutes les minutes au plus.
-3. Enregistrez : les appareils apparaissent dans l'onglet **Découverte**,
-   prêts à être ajoutés.
+Installez l'intégration (**Intégrations → Installer depuis GitHub**, adresse
+`https://github.com/guim31/gladys-hebcal`), ouvrez son onglet **Configuration**, vérifiez les champs
+ci-dessous et enregistrez. Ouvrez ensuite l'onglet **Découverte** et ajoutez l'appareil **Calendrier
+hébraïque**.
 
-Le réglage **Préférer la connexion locale** pilote la prise de
-démonstration : elle affiche en badge le canal réellement utilisé (local ou
-cloud), avec un point orange quand elle fonctionne en mode dégradé (local
-refusé, bascule cloud).
+### Maison et fuseau horaire
 
-## Actions
+L'intégration prend la première maison Gladys qui a des coordonnées. S'il n'y en a pas, la page de
+l'intégration l'indique et l'intégration réessaie toutes les 10 minutes. Après avoir déplacé la maison,
+redémarrez l'intégration (ou enregistrez sa configuration) pour recalculer les horaires tout de suite.
 
-- **Tester le fournisseur météo** — effectue une requête en direct vers
-  Open-Meteo et affiche la température et l'humidité actuelles sous le
-  bouton.
-- **Identifier un appareil** — choisissez un de vos appareils dans la liste
-  et il se signale (la lampe de démonstration « clignote » dans les logs).
+### Israël ou diaspora
 
-## Scènes
+**Automatique** choisit Israël quand le fuseau horaire de Gladys est `Asia/Jerusalem`, la diaspora sinon.
+Choisissez explicitement si votre communauté suit l'autre calendrier.
 
-L'intégration ajoute ses propres cartes à l'éditeur de scènes (Gladys 5.1
-ou plus récent), dans la catégorie **Intégrations** :
+### Allumage et havdala
 
-- **Mouvement détecté** (déclencheur) — lance la scène quand un détecteur
-  de démonstration voit bouger quelque chose. Choisissez éventuellement le
-  détecteur et ce qui a bougé (personne, animal) ; laissés vides, toute
-  détection correspond. Les actions suivantes peuvent lire ce qui a bougé
-  avec `{{triggerEvent.data.target}}`.
-- **Identifier un appareil** (action) — fait se signaler l'appareil choisi.
-  Elle indique si l'appareil a pu se signaler, pour que les actions
-  suivantes puissent en dépendre.
+- **Allumage : minutes avant le coucher du soleil** : 18 par défaut. Jérusalem en compte 40, Haïfa 30,
+  Tel-Aviv 20 ; certaines communautés 15, 20 ou 22.
+- **Fin du chabbat et des fêtes** : l'heure de la havdala, et la fin du chabbat pour l'appareil et les
+  déclencheurs. Soleil à 8,5° sous l'horizon (trois petites étoiles, réglage par défaut de hebcal.com), ou
+  42, 50 ou 72 minutes après le coucher du soleil (72 : Rabbénou Tam).
 
-## Tableau de bord
+### Noms et langue
 
-Ajoutez le widget **État de la démo** à un tableau de bord : il affiche en
-direct la température de la station météo et la puissance de la prise du
-bureau, la connexion utilisée par la prise (en orange si dégradée) et la
-position observée. Son bouton **Identifier la lampe** fait se signaler la
-lampe de démonstration.
+- **Langue des textes** : les noms des capteurs, les horaires et les textes des événements et de l'action de
+  scène (français par défaut). Les noms des capteurs sont fixés à l'ajout de l'appareil : après un
+  changement, supprimez puis rajoutez l'appareil pour les renommer. Le widget suit la langue de la personne
+  qui le regarde.
+- **Noms des fêtes et des mois** : les noms usuels de la langue (« Pessa'h », « Souccot », « Roch Hachana » ;
+  la translittération quand il n'y en a pas, comme pour la plupart des parachiot), la translittération de
+  hebcal.com (séfarade : « Shavuot »), l'ashkénaze (« Shavuos »), ou l'écriture hébraïque.
+
+## L'appareil calendrier
+
+| Capteur                       | Valeur                                                                                |
+| ----------------------------- | ------------------------------------------------------------------------------------- |
+| Date hébraïque                | « 9 'Hechvan 5787 ». Change au coucher du soleil, comme le jour hébraïque             |
+| Fête du jour                  | La fête, Roch 'Hodech, le jeûne ou le jour de 'Hanouka (« 'Hanouka 3/8 »), « Aucune » |
+| Chabbat ou fête en cours      | Allumé de l'allumage des bougies à la havdala (chabbat, Kippour, jours de yom tov)    |
+| Chabbat ou fête demain        | Allumé quand la journée de demain est un chabbat ou un jour de yom tov                |
+| Prochain allumage des bougies | « ven. 23 oct., 18:27 »                                                               |
+| Prochaine havdala             | « sam. 24 oct., 19:32 »                                                               |
+| Paracha de la semaine         | La paracha du prochain chabbat, ou la fête lue à sa place                             |
+| Compte du Omer                | Le jour du Omer (1 à 49), 0 hors du compte. Change au coucher du soleil               |
+| Jours avant la prochaine fête | Jours avant le prochain jour de yom tov (0 le jour même)                              |
+
+Chaque valeur est envoyée par l'intégration quand elle change (au coucher du soleil, à l'allumage, à la
+havdala) et republiée toutes les 12 heures : il n'y a rien à interroger. Des jours consécutifs (une fête
+suivie du chabbat, les deux jours d'une fête en diaspora) forment une seule période.
+
+## Widget du tableau de bord
+
+**Calendrier hébraïque** affiche la date hébraïque, le chabbat ou la fête en cours avec sa fin, les prochains
+allumage et havdala, le jour du Omer, la paracha, la fête du jour, la prochaine fête et, sauf si vous le
+désactivez dans ses réglages, les zmanim du jour : aube (alot hacha'har, 16,1°), lever du soleil, fin du
+Chema (Gra), midi solaire ('hatsot), coucher du soleil et tombée de la nuit (tsét, 8,5°).
+
+## Déclencheurs de scène
+
+- **Allumage des bougies** : à l'heure de l'allumage, ou 10, 15, 30 minutes, 1 ou 2 heures avant (champ
+  **Quand**, obligatoire). Aussi le second soir d'une fête, à la tombée de la nuit. Variables : minutes
+  avant, type (`shabbat` ou `holiday`), nom, heure (ISO) et heure locale.
+- **Début du chabbat ou d'une fête** : à l'allumage, une seule fois pour des jours consécutifs. Variables :
+  type, nom, inclut un chabbat, fin (ISO) et fin en heure locale.
+- **Fin du chabbat ou d'une fête** : à la havdala, une fois le dernier des jours consécutifs terminé.
+  Variables : type, nom, inclut un chabbat.
+
+Le filtre **Chabbat ou fête** ne garde qu'un type (vide : les deux). Un chabbat qui est aussi une fête, et
+une période qui mêle les deux, comptent comme une fête.
+
+## Action de scène « Infos du jour »
+
+Donne les informations d'aujourd'hui ou de demain (champ **Jour**, vide : aujourd'hui) aux actions
+suivantes : date, date hébraïque, fête, **chabbat ou fête (1 = oui, 0 = non)**, allumage et havdala de ce
+jour-là, paracha, jour du Omer, lever du soleil, fin du Chema, coucher du soleil et tombée de la nuit (heures
+locales, vides quand le jour n'en a pas). Testez la valeur 1/0 avec une étape **Condition sur variables**.
+
+## Exemples de scènes
+
+- **Lumières de chabbat** : déclencheur **Début du chabbat ou d'une fête** → allumer la salle à manger,
+  chauffage en confort ; **Fin du chabbat ou d'une fête** → retour à la normale.
+- **Rappel** : déclencheur **Allumage des bougies**, **Quand** = 1 heure avant → envoyer le message
+  « Allumage à {{triggerEvent.data.local_time}} ».
+- **Pas de réveil le chabbat** : à 21 h, action **Infos du jour** avec **Jour** = demain, puis une
+  **Condition sur variables** : « Chabbat ou fête » égal à 0 → programmer le réveil.
+- **Condition** : dans n'importe quelle scène, la condition « Chabbat ou fête en cours » à Éteint empêche la
+  scène de s'exécuter pendant chabbat.
 
 ## Dépannage
 
-L'intégration journalise tout ce qu'elle fait : consultez les logs de
-l'intégration depuis l'interface Gladys (ou `docker logs` sur l'hôte) avec
-`LOG_LEVEL=debug` pour le détail complet.
+- **« Aucune maison avec des coordonnées »** : renseignez la latitude et la longitude d'une maison dans
+  **Paramètres → Maisons** ; l'intégration les prend en compte dans les 10 minutes.
+- **Horaires décalés d'une heure** : vérifiez le fuseau horaire de Gladys dans **Paramètres → Système**.
+- **Noms des capteurs dans la mauvaise langue** : les noms sont fixés à l'ajout de l'appareil ; supprimez
+  puis rajoutez l'appareil après avoir changé la langue.
+- **Un déclencheur parti en retard ou pas du tout après un redémarrage** : un événement prévu pendant l'arrêt
+  de l'intégration est envoyé à sa reprise si elle a lieu dans les 15 minutes, jamais plus tard, et jamais
+  deux fois.
+
+## Limites
+
+- Les horaires sont calculés pour les coordonnées de la maison, au niveau de la mer, comme hebcal.com par
+  défaut.
+- Près des pôles, là où le soleil ne se couche pas ou ne descend pas à 8,5°, l'allumage ou la havdala peuvent
+  manquer : aucune période de chabbat n'est alors indiquée.
+- Les rappels avant l'allumage sont fixes (10, 15, 30 minutes, 1 ou 2 heures).
+- Une seule maison : la première maison Gladys qui a des coordonnées.
+
+## Crédits
+
+Calendrier, horaires et parachiot : [@hebcal/core](https://github.com/hebcal/hebcal-es6) de Michael J.
+Radwin et des contributeurs de hebcal (GPL-2.0-or-later), le moteur de hebcal.com. L'intégration
+`jewish_calendar` de Home Assistant a inspiré les capteurs. Cette intégration n'est pas affiliée à
+hebcal.com. Elle est publiée sous licence GPL-3.0-or-later.

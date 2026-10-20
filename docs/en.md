@@ -1,61 +1,139 @@
-# Demo Devices Template
+# Hebrew Calendar
 
-This is the user documentation of the integration. Gladys re-hosts this file
-and shows a permanent **Documentation** link to it in the Configuration screen
-(in the user's language, with English as the fallback) — it is when
-configuring that the user needs it most. Keep the short onboarding hints in
-the `section` blocks of the manifest `config_schema`; put the long
-step-by-step (screenshots, troubleshooting…) here.
+The Jewish calendar of your house in Gladys: the Hebrew date, Shabbat and the holidays, candle lighting and
+havdalah times, the weekly Torah portion, the Omer and the main zmanim. As sensors for the dashboard and
+the scene conditions, and as scene triggers: dim the lights at candle lighting, turn the alarm clock off on
+Shabbat and holiday mornings, get a reminder an hour before Shabbat.
 
-## What you get
+- **Computed at home**, with the engine of [hebcal.com](https://www.hebcal.com) (`@hebcal/core`): no
+  account, no Internet access, nothing leaves your Gladys.
+- **Israel or diaspora**: one or two days of holiday, and the weekly portion that goes with it.
+- **Your community's customs**: minutes of candle lighting before sunset (18, 40 in Jerusalem…) and the
+  end of Shabbat (8.5° or 42, 50, 72 minutes).
 
-Six demo devices show up after installation: a weather station (real data
-from Open-Meteo), a switch, a dimmable light, a smart plug with power
-metering, a motion sensor and a camera.
+> Tested with its automated test suite against the times published by hebcal.com (Paris, Jerusalem, New
+> York, 2025 to 2027), not yet on many real Gladys instances: feedback welcome on the Gladys forum or in
+> the GitHub issues. The times are given for convenience: follow your rabbi for halachic decisions.
+
+## What you need
+
+- Gladys Assistant 5.1.0 or later.
+- A house with its coordinates in Gladys (**Settings → Houses**): the times depend on the position of the
+  house.
+- The right time zone in Gladys (**Settings → System**): every time is computed and shown in it.
 
 ## Configuration
 
-1. Open the **Configuration** tab of the integration.
-2. Set the **latitude** and **longitude** the demo weather station should
-   observe (they default to Paris), and pick your temperature unit.
-   The **refresh interval** sets how often the weather station and the
-   plug's power are read: every 5 minutes by default, every minute at most.
-3. Save: the devices appear in the **Discovery** tab, ready to be added.
+Install the integration (**Integrations → Install from GitHub**, address
+`https://github.com/guim31/gladys-hebcal`), open its **Configuration** tab, check the fields below and save.
+Then open the **Discover** tab and add the **Hebrew calendar** device.
 
-The **Prefer the local connection** toggle drives the demo plug: it reports
-the channel it actually uses as a badge (local or cloud), with an orange dot
-when it runs degraded (local refused, cloud fallback).
+### House and time zone
 
-## Actions
+The integration uses the first Gladys house that has coordinates. Without one, the integration page says so
+and the integration tries again every 10 minutes. After moving the house, restart the integration (or save
+its configuration) to recompute the times at once.
 
-- **Test the weather provider** — performs a live request to Open-Meteo and
-  shows the current temperature and humidity under the button.
-- **Identify a device** — pick one of your devices in the list and it will
-  signal itself (the demo light "blinks" in the logs).
+### Israel or diaspora
 
-## Scenes
+**Automatic** chooses Israel when the time zone of Gladys is `Asia/Jerusalem`, the diaspora otherwise.
+Choose explicitly if your community follows the other calendar.
 
-The integration adds its own cards to the scene editor (Gladys 5.1 or
-later), under the **Integrations** category:
+### Candle lighting and havdalah
 
-- **Motion detected** (trigger) — starts the scene when a demo motion sensor
-  sees something move. Optionally pick the sensor and what moved (person,
-  animal); left empty, any detection matches. The following actions can
-  read what moved with `{{triggerEvent.data.target}}`.
-- **Identify a device** (action) — makes the chosen device signal itself.
-  It returns whether the device could signal itself, so the following
-  actions can depend on it.
+- **Candle lighting: minutes before sunset**: 18 by default. Jerusalem uses 40, Haifa 30, Tel Aviv 20; some
+  communities use 15, 20 or 22.
+- **End of Shabbat and holidays**: when havdalah is shown and Shabbat ends for the device and the triggers.
+  The sun 8.5° below the horizon (three small stars, the default of hebcal.com), or 42, 50 or 72 minutes
+  after sunset (72: Rabbeinu Tam).
 
-## Dashboard
+### Names and language
 
-Add the **Demo status** widget to a dashboard: it shows the live
-temperature of the weather station and the power of the office plug, the
-connection the plug currently uses (orange when degraded) and the observed
-location. Its **Identify the light** button makes the demo light signal
-itself.
+- **Language of the texts**: the names of the sensors, the times and the texts of the scene events and of
+  the scene action (French by default). The sensor names are set when the device is added: after a change,
+  delete and re-add the device to rename them. The widget follows the language of the person looking at
+  it.
+- **Holiday and month names**: the usual names of the language ("Pessa'h", "Pessach", "Pésaj"; the
+  transliteration when there is no usual name, as for most weekly portions), the transliteration of
+  hebcal.com (Sephardic: "Shavuot"), the Ashkenazi one ("Shavuos"), or Hebrew script.
+
+## The calendar device
+
+| Sensor                      | Value                                                                       |
+| --------------------------- | --------------------------------------------------------------------------- |
+| Hebrew date                 | "9 Cheshvan 5787". Changes at sunset, like the Hebrew day                   |
+| Holiday today               | The holiday, Rosh Chodesh, fast or day of Chanukah ("Chanukah 3/8"), "None" |
+| Shabbat or holiday now      | On from candle lighting to havdalah (Shabbat, Yom Kippur and yom tov days)  |
+| Shabbat or holiday tomorrow | On when tomorrow's daytime is Shabbat or a yom tov day                      |
+| Next candle lighting        | "Fri, Oct 23, 06:27 PM"                                                     |
+| Next havdalah               | "Sat, Oct 24, 07:32 PM"                                                     |
+| Weekly Torah portion        | The portion of the coming Shabbat, or the holiday read instead              |
+| Omer count                  | The day of the Omer (1 to 49), 0 outside the counting. Changes at sunset    |
+| Days until the next holiday | Days until the next yom tov day (0 on the day itself)                       |
+
+Every value is pushed by the integration when it changes (at sunset, at candle lighting, at havdalah) and
+republished every 12 hours: there is nothing to poll. Consecutive days (a holiday followed by Shabbat, the
+two days of a holiday in the diaspora) are one single period.
+
+## Dashboard widget
+
+**Hebrew calendar** shows the Hebrew date, Shabbat or the holiday under way with its end, the next candle
+lighting and havdalah, the day of the Omer, the weekly portion, the holiday of the day, the next holiday and,
+unless turned off in its settings, the zmanim of the day: dawn (alot hashachar, 16.1°), sunrise, latest
+Shema (Gra), midday (chatzot), sunset and nightfall (tzeit, 8.5°).
+
+## Scene triggers
+
+- **Candle lighting**: at candle lighting time, or 10, 15, 30 minutes, 1 or 2 hours before (the **When**
+  field, required). Also on the second evening of a holiday, at nightfall. Variables: minutes before, kind
+  (`shabbat` or `holiday`), name, time (ISO) and local time.
+- **Shabbat or holiday begins**: at candle lighting, once for consecutive days. Variables: kind, name,
+  includes Shabbat, end (ISO) and local end.
+- **Shabbat or holiday ends**: at havdalah, once the last of the consecutive days is over. Variables: kind,
+  name, includes Shabbat.
+
+The **Shabbat or holiday** filter keeps one kind only (empty: both). A Shabbat that is also a holiday, and
+a period mixing both, count as a holiday.
+
+## Scene action "Day information"
+
+Gives the information of today or tomorrow (**Day** field, empty: today) to the following actions: date,
+Hebrew date, holiday, **Shabbat or holiday (1 = yes, 0 = no)**, candle lighting and havdalah of that day,
+weekly portion, day of the Omer, sunrise, latest Shema, sunset and nightfall (local times, empty when the
+day has none). Test the 1/0 value with a **Condition on variables** step.
+
+## Scene examples
+
+- **Shabbat lights**: trigger **Shabbat or holiday begins** → turn on the dining room lights, switch the
+  heating to comfort; **Shabbat or holiday ends** → back to normal.
+- **Reminder**: trigger **Candle lighting**, **When** = 1 hour before → send the message "Candle lighting at
+  {{triggerEvent.data.local_time}}".
+- **No alarm clock on Shabbat**: at 21:00, action **Day information** with **Day** = tomorrow, then a
+  **Condition on variables**: "Shabbat or holiday" equals 0 → set the wake-up alarm.
+- **Condition**: in any scene, the condition "Shabbat or holiday now" is Off keeps the scene from running
+  during Shabbat.
 
 ## Troubleshooting
 
-The integration logs everything it does: check the integration logs from the
-Gladys UI (or `docker logs` on the host) with `LOG_LEVEL=debug` for the full
-detail.
+- **"No house with coordinates"**: set the latitude and longitude of a house in **Settings → Houses**; the
+  integration picks them up within 10 minutes.
+- **Times off by an hour**: check the time zone of Gladys in **Settings → System**.
+- **Sensor names in the wrong language**: the names are set when the device is added; delete and re-add the
+  device after changing the language.
+- **A trigger fired late or not at all after a restart**: an event due while the integration was stopped is
+  sent when it starts again within 15 minutes, never later, and never twice.
+
+## Limits
+
+- Times are computed for the coordinates of the house, at sea level, like hebcal.com by default.
+- Near the poles, where the sun does not set or does not go down 8.5°, candle lighting or havdalah may be
+  missing: no Shabbat period is shown then.
+- The reminders before candle lighting are fixed (10, 15, 30 minutes, 1 or 2 hours).
+- One house: the first Gladys house with coordinates.
+
+## Credits
+
+Calendar, times and weekly portions: [@hebcal/core](https://github.com/hebcal/hebcal-es6) by Michael J.
+Radwin and the hebcal contributors (GPL-2.0-or-later), the engine of hebcal.com. Home Assistant's
+`jewish_calendar` integration inspired the sensors. This integration is not affiliated with hebcal.com. It
+is published under the GPL-3.0-or-later license.
