@@ -1,6 +1,6 @@
 {
   "name": "gladys-hebcal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Gladys Assistant external integration: the Hebrew calendar of the house (date, Shabbat and holidays, candle lighting, havdalah, Torah portion, Omer), computed locally with @hebcal/core.",
   "type": "module",
