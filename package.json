@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@gladysassistant/integration-sdk": "^0.16.0",
-    "@hebcal/core": "^6.14.7"
+    "@hebcal/core": "^6.15.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
